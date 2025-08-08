@@ -1,0 +1,256 @@
+/* Projects Listing Page Styles */
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectsHero {
+  min-height: 100vh;
+  background-color: white;
+  color: black;
+  position: relative;
+  padding: 2rem 0;
+  overflow: hidden;
+}
+
+/* Title section - positioned to the left */
+.titleSection {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem 0;
+  position: relative;
+  z-index: 10;
+}
+
+.projectsTitle {
+  font-size: 5em;
+  font-weight: 900;
+  color: black;
+  margin: 0;
+  text-align: left;
+}
+
+/* Main content section */
+.contentSection {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+/* Numbers on the left - absolutely positioned */
+.projectNumbers {
+  position: absolute;
+  left: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  z-index: 10;
+}
+
+.projectNumbers::before {
+  content: "";
+  position: absolute;
+  right: -20px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: black;
+}
+
+.numberItem {
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding-right: 40px;
+  text-align: right;
+}
+
+.numberItem:hover {
+  transform: translateX(-10px);
+}
+
+.number {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: black;
+  transition: all 0.3s ease;
+}
+
+.activeNumber .number {
+  font-size: 4rem;
+  font-weight: 900;
+  color: black;
+  transform: scale(1.2);
+}
+
+/* 3D Carousel Styles - perfectly centered */
+.carouselContainer {
+  position: relative;
+  height: 70vh;
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1200px;
+  cursor: grab;
+}
+
+.carouselContainer:active {
+  cursor: grabbing;
+}
+
+.carouselTrack {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carouselItem {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center center;
+  transition: all 0.5s ease;
+  pointer-events: none; /* Disable interactions by default */
+  margin-left: -250px; /* Half the width of the card */
+  margin-top: -175px; /* Half the height of the card */
+}
+
+/* Only active item is interactive */
+.carouselItem.activeItem {
+  pointer-events: auto;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* Hover effect is now handled in JavaScript */
+
+.projectThumbnail {
+  background-color: #f0f0f0;
+  border: 2px solid #333;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  width: 500px;
+  height: 350px;
+  position: relative;
+}
+
+/* Only active item gets hover effects */
+.activeItem .projectThumbnail:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  transform: translateY(-5px);
+}
+
+.projectPlaceholder {
+  height: 220px;
+  background-color: #b0b0b0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.projectImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Only active item gets image hover effect */
+.activeItem .projectThumbnail:hover .projectImage {
+  transform: scale(1.1);
+}
+
+.projectOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.6)
+  );
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem;
+}
+
+.projectCategory {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.projectInfo {
+  padding: 1.5rem;
+  background-color: white;
+  color: black;
+}
+
+.projectTitle {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+  color: black;
+}
+
+.projectDescription {
+  font-size: 1.1rem;
+  color: #666;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .carouselItem {
+    margin-left: -175px; /* Half the width of the mobile card */
+    margin-top: -125px; /* Half the height of the mobile card */
+  }
+
+  .projectThumbnail {
+    width: 350px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carouselItem {
+    margin-left: -140px; /* Half the width of the small mobile card */
+    margin-top: -100px; /* Half the height of the small mobile card */
+  }
+
+  .projectThumbnail {
+    width: 280px;
+    height: 200px;
+  }
+}

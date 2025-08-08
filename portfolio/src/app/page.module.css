@@ -1,0 +1,651 @@
+/*-----------------Hero Section-----------------*/
+
+.hero {
+  display: flex;
+  min-height: 100vh;
+  width: 100vw;
+  align-items: center;
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+}
+
+.heroImage {
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .heroTitle {
+    font-size: clamp(3rem, 10vw, 12rem);
+    top: 1rem;
+  }
+}
+
+/*-----------------About Section-----------------*/
+
+.about {
+  background-color: white;
+  min-height: 100vh;
+  width: 100vw;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 6rem; /* Side margins for centering effect */
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px; /* Control max width */
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1.875rem;
+  min-height: 80vh; /* Give it some breathing room */
+}
+
+.aboutText {
+  grid-column: 1;
+  grid-row: 1/4; /* Span all three rows */
+  font-size: 13.125rem;
+  font-weight: 900;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  color: transparent;
+  -webkit-text-stroke: clamp(2px, 0.3vw, 3px) black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.05em;
+}
+
+.aboutRightColumn {
+  grid-column: 2;
+  grid-row: 1/4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.aboutRowOne {
+  display: grid;
+  grid-template-columns: 114px 1fr;
+  column-gap: 2rem;
+  align-items: center;
+}
+
+.aboutRowTwo {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 1;
+}
+
+.aboutRowThree {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.logoGroup {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 157px;
+  width: 114px;
+  object-fit: contain;
+}
+
+.aspireGroup {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.aspireText {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.titleText {
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 1.1;
+  margin-top: 0.5rem;
+}
+
+/* Add this to your existing .titleText styles */
+.titleText {
+  font-size: clamp(48px, 6vw, 64px);
+  font-weight: 900;
+  line-height: 1.1;
+  margin-top: 0.5rem;
+
+  /* Animation setup */
+  position: relative;
+  color: transparent;
+  -webkit-text-stroke: 2px black;
+  text-stroke: 2px black;
+  overflow: hidden;
+}
+
+/* Create the liquid fill effect */
+.titleText::before {
+  content: "DESIGNER";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  color: black;
+  -webkit-text-stroke: 0;
+  text-stroke: 0;
+  overflow: hidden;
+  white-space: nowrap;
+
+  /* Smooth liquid effect */
+  mask: radial-gradient(
+        ellipse 40px 30px at 100% 50%,
+        transparent 45%,
+        black 50%,
+        black 55%,
+        transparent 60%
+      )
+      0 0/40px 100%,
+    linear-gradient(90deg, black, black);
+  mask-composite: intersect;
+  -webkit-mask: radial-gradient(
+        ellipse 40px 30px at 100% 50%,
+        transparent 45%,
+        black 50%,
+        black 55%,
+        transparent 60%
+      )
+      0 0/40px 100%,
+    linear-gradient(90deg, black, black);
+  -webkit-mask-composite: source-in;
+
+  animation: liquidFill 4s linear infinite;
+}
+
+/* Keyframes for left-to-right fill and drain */
+@keyframes liquidFill {
+  0% {
+    width: 0%;
+    mask-position: 0 0, 0 0;
+    -webkit-mask-position: 0 0, 0 0;
+  }
+
+  40% {
+    width: 100%;
+    mask-position: calc(100% - 40px) 0, 0 0;
+    -webkit-mask-position: calc(100% - 40px) 0, 0 0;
+  }
+
+  60% {
+    width: 100%;
+    mask-position: calc(100% - 40px) 0, 0 0;
+    -webkit-mask-position: calc(100% - 40px) 0, 0 0;
+  }
+
+  100% {
+    width: 0%;
+    mask-position: calc(200% - 40px) 0, 0 0;
+    -webkit-mask-position: calc(200% - 40px) 0, 0 0;
+  }
+}
+
+.introductionText {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 45px;
+  max-width: 600px;
+}
+
+.moreLink {
+  font-size: 11.25rem;
+  font-weight: 900;
+  line-height: 0.8;
+  color: black;
+  cursor: pointer;
+  perspective: 1000px;
+  text-decoration: none;
+  background-color: white;
+}
+
+.moreLink:hover,
+.moreLink:focus {
+  color: black;
+}
+
+/* The span is the element that will actually flip */
+.moreLink span {
+  position: relative;
+  display: inline-block;
+  padding: 0 5px;
+  /* This transition applies to both the color and the transform */
+  transition: transform 0.4s, color 0.4s;
+  transform-origin: 50% 0;
+  transform-style: preserve-3d;
+}
+
+/* The ::before pseudo-element holds the new character */
+.moreLink span:before {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  content: attr(data-hover);
+  transform: rotateX(-90deg);
+  transform-origin: 50% 0;
+  color: rgb(210, 73, 54);
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+/* On hover, trigger the rotation and hide the original character */
+.moreLink:hover span,
+.moreLink:focus span {
+  /* Hides the original ">" by making it transparent */
+  color: transparent;
+
+  /* Rotates the span to reveal the ::before element */
+  transform: rotateX(90deg) translateY(-0.5em);
+}
+
+.moreLink:hover span:before,
+.moreLink:focus span:before {
+  opacity: 1;
+}
+
+/*-----------------Projects Section-----------------*/
+
+.projects {
+  background-color: white;
+  min-height: 100vh;
+  width: 100vw;
+  color: black;
+  display: grid;
+  place-items: center;
+  padding: 2rem 6rem;
+}
+
+.projectContainer {
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr;
+  gap: 32px;
+  aspect-ratio: 4/3;
+}
+
+.projectRowOne {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  overflow: hidden;
+}
+
+.projectRowTwo {
+  background: linear-gradient(
+    90deg,
+    #4f46e5,
+    #06b6d4,
+    #10b981,
+    #f59e0b,
+    #ef4444,
+    #8b5cf6,
+    #4f46e5
+  );
+  background-size: 300% 100%;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 2rem;
+  min-height: 120px;
+  cursor: pointer;
+}
+.projectRowTwo:hover {
+  animation: gradientMove 8s ease-in-out infinite;
+}
+
+/* Gradient animation */
+@keyframes gradientMove {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.projectInnerColumnOne,
+.projectInnerColumnTwo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+
+.floppy {
+  position: relative;
+  transform: translateX(-4%);
+  width: 500px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  cursor: pointer;
+}
+
+.floppyDisk,
+.floppyGuard {
+  grid-row: 1;
+  grid-column: 1;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.floppyGuard {
+  z-index: 2;
+  transition: transform 0.3s ease;
+}
+
+.floppy:hover .floppyGuard {
+  transform: translateX(-10%);
+}
+
+.designText {
+  color: transparent;
+  -webkit-text-stroke: clamp(2px, 0.3vw, 3px) white;
+  font-size: 140px;
+  font-weight: 900;
+  grid-row: 1;
+  grid-column: 1;
+  z-index: 3;
+  align-self: end;
+  justify-self: start;
+  pointer-events: none;
+  line-height: 0.8;
+  padding: 0 0 20px 20px;
+}
+
+.diskContainer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  cursor: pointer;
+}
+
+.webText {
+  color: black;
+  font-size: 180px;
+  font-weight: 900;
+  grid-row: 1;
+  grid-column: 1;
+  z-index: 2;
+  align-self: center; /* Changed from start to center */
+  justify-self: start; /* This puts it on the right */
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  pointer-events: none;
+  padding: 0 20px 0 0;
+}
+
+.cdImage {
+  grid-row: 1;
+  grid-column: 1;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: transform 0.3s ease;
+  transform: translateX(30%);
+}
+
+/* CD rotation on hover */
+.diskContainer:hover .cdImage {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: translateX(30%) rotate(0deg); /* Keep the translateX */
+  }
+  to {
+    transform: translateX(30%) rotate(360deg); /* Keep the translateX */
+  }
+}
+
+/* ART text styling */
+.projectRowTwo span {
+  color: white;
+  font-size: 180px;
+  transform: translateY(22%);
+  pointer-events: none;
+  font-weight: 900;
+}
+
+/*-----------------Contacts Section-----------------*/
+.contacts {
+  background-color: white;
+  min-height: 100vh;
+  width: 100vw;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 6rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 3rem;
+  min-height: 80vh;
+}
+
+.contactsRowOne {
+  font-size: clamp(120px, 15vw, 200px);
+  font-weight: 900;
+  text-align: left;
+  line-height: 0.8;
+}
+
+.contactsRowTwo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.contactsInnerColumnOne {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactsForm {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formField label {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+}
+
+.formField input {
+  border: none;
+  border-bottom: 2px solid #e5e5e5;
+  padding: 0.75rem 0;
+  font-size: 16px;
+  background: transparent;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.formField input:focus {
+  border-bottom-color: #333;
+}
+
+.formField textarea {
+  border: 2px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 1rem;
+  font-size: 16px;
+  min-height: 120px;
+  resize: vertical;
+  outline: none;
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+}
+
+.formField textarea:focus {
+  border-color: #333;
+}
+
+.formField button {
+  background: black;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+}
+
+.formField button:hover {
+  background: #333;
+}
+
+.contactsText {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  height: 100%;
+}
+
+.contactsLinks h3,
+.contactsInformation h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.contactsLinks ul,
+.contactsInformation ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contactsLinks li::before,
+.contactsInformation li::before {
+  content: "→ ";
+  margin-right: 0.5rem;
+}
+
+.contactsLinks a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  transition: opacity 0.3s ease;
+}
+
+.contactsLinks a:hover {
+  opacity: 0.7;
+}
+
+.contactsInformation li {
+  font-size: 16px;
+}
+
+.contactsArrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.contactsArrow:hover {
+  transform: translateY(-5px) scale(1.1);
+}
+
+.arrowSvg {
+  width: 60px;
+  height: 60px;
+  stroke: black;
+  stroke-width: 3;
+  fill: none;
+  transition: transform 0.3s ease;
+}
+
+.contactsArrow:hover .arrowSvg {
+  transform: scale(1.1);
+}
+
+.contactsArrow span {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.contactsArrow:hover span {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .contacts {
+    padding: 1rem 2rem;
+  }
+
+  .contactsRowTwo {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .contactsRowOne {
+    font-size: clamp(80px, 12vw, 120px);
+  }
+}

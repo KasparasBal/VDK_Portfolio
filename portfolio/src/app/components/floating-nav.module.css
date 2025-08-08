@@ -1,0 +1,148 @@
+.floatingNav {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  background: white;
+  border-radius: 50px;
+  padding: 8px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  height: 60px;
+  width: auto;
+  min-width: auto;
+  display: flex;
+  align-items: center;
+}
+
+.navContainer {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+  width: 100%;
+  overflow: visible;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  pointer-events: auto;
+  flex-shrink: 0;
+  overflow: visible;
+  position: relative;
+}
+
+.navItem:hover {
+  background: rgba(0, 0, 0, 0.05);
+  color: #000;
+  transform: translateY(-1px);
+}
+
+.navItem.active {
+  background: rgba(0, 0, 0, 0.08);
+  color: #000;
+  font-weight: 600;
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) saturate(100%) invert(20%) sepia(0%) saturate(0%)
+    hue-rotate(0deg) brightness(0%) contrast(80%);
+  transition: all 0.3s ease;
+}
+
+.navItem:hover .icon {
+  filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%)
+    hue-rotate(0deg) brightness(0%) contrast(100%);
+}
+
+.navItem.active .icon {
+  filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%)
+    hue-rotate(0deg) brightness(0%) contrast(100%);
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .floatingNav {
+    bottom: 16px;
+    height: 56px;
+    padding: 6px;
+  }
+
+  .navItem {
+    padding: 10px 14px;
+    font-size: 13px;
+  }
+
+  .iconContainer {
+    width: 20px;
+    height: 20px;
+  }
+
+  .icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .label {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .floatingNav {
+    bottom: 12px;
+    height: 52px;
+    padding: 6px;
+  }
+
+  .navItem {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .iconContainer {
+    width: 18px;
+    height: 18px;
+  }
+
+  .icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .label {
+    font-size: 12px;
+  }
+}

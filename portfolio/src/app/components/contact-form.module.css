@@ -1,0 +1,89 @@
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formField label {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  text-transform: none;
+}
+
+.formField input {
+  border: none;
+  border-bottom: 2px solid #e5e5e5;
+  padding: 0.75rem 0;
+  font-size: 16px;
+  background: transparent;
+  outline: none;
+  transition: border-color 0.3s ease;
+  color: black;
+  font-family: inherit;
+}
+
+.formField input:focus {
+  border-bottom-color: #333;
+}
+
+.formField textarea {
+  border: 2px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 1rem;
+  font-size: 16px;
+  min-height: 120px;
+  resize: vertical;
+  outline: none;
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+  color: black;
+  background: transparent;
+}
+
+.formField textarea:focus {
+  border-color: #333;
+}
+
+.successMessage {
+  background: rgba(34, 197, 94, 0.1);
+  color: #166534;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(34, 197, 94, 0.2);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.errorMessage {
+  background: rgba(239, 68, 68, 0.1);
+  color: #991b1b;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contactForm {
+    gap: 1.5rem;
+  }
+
+  .formField label {
+    font-size: 16px;
+  }
+
+  .formField input,
+  .formField textarea {
+    font-size: 14px;
+  }
+}
