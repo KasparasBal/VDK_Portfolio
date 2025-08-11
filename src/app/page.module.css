@@ -146,7 +146,7 @@
 
 /* Create the liquid fill effect */
 .titleText::before {
-  content: "DESIGNER";
+  content: attr(data-text);
   position: absolute;
   top: 0;
   left: 0;

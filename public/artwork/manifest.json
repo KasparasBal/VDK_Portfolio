@@ -1,0 +1,562 @@
+[
+  {
+    "id": 1,
+    "original": "/artwork/art_1.PNG",
+    "full": "/artwork/full/art_1.webp",
+    "thumb": "/artwork/thumbs/art_1.webp",
+    "blur": "/artwork/blur/art_1.webp"
+  },
+  {
+    "id": 2,
+    "original": "/artwork/art_2.PNG",
+    "full": "/artwork/full/art_2.webp",
+    "thumb": "/artwork/thumbs/art_2.webp",
+    "blur": "/artwork/blur/art_2.webp"
+  },
+  {
+    "id": 3,
+    "original": "/artwork/art_3.PNG",
+    "full": "/artwork/full/art_3.webp",
+    "thumb": "/artwork/thumbs/art_3.webp",
+    "blur": "/artwork/blur/art_3.webp"
+  },
+  {
+    "id": 4,
+    "original": "/artwork/art_4.PNG",
+    "full": "/artwork/full/art_4.webp",
+    "thumb": "/artwork/thumbs/art_4.webp",
+    "blur": "/artwork/blur/art_4.webp"
+  },
+  {
+    "id": 5,
+    "original": "/artwork/art_5.PNG",
+    "full": "/artwork/full/art_5.webp",
+    "thumb": "/artwork/thumbs/art_5.webp",
+    "blur": "/artwork/blur/art_5.webp"
+  },
+  {
+    "id": 6,
+    "original": "/artwork/art_6.PNG",
+    "full": "/artwork/full/art_6.webp",
+    "thumb": "/artwork/thumbs/art_6.webp",
+    "blur": "/artwork/blur/art_6.webp"
+  },
+  {
+    "id": 7,
+    "original": "/artwork/art_7.PNG",
+    "full": "/artwork/full/art_7.webp",
+    "thumb": "/artwork/thumbs/art_7.webp",
+    "blur": "/artwork/blur/art_7.webp"
+  },
+  {
+    "id": 8,
+    "original": "/artwork/art_8.PNG",
+    "full": "/artwork/full/art_8.webp",
+    "thumb": "/artwork/thumbs/art_8.webp",
+    "blur": "/artwork/blur/art_8.webp"
+  },
+  {
+    "id": 9,
+    "original": "/artwork/art_9.PNG",
+    "full": "/artwork/full/art_9.webp",
+    "thumb": "/artwork/thumbs/art_9.webp",
+    "blur": "/artwork/blur/art_9.webp"
+  },
+  {
+    "id": 10,
+    "original": "/artwork/art_10.PNG",
+    "full": "/artwork/full/art_10.webp",
+    "thumb": "/artwork/thumbs/art_10.webp",
+    "blur": "/artwork/blur/art_10.webp"
+  },
+  {
+    "id": 11,
+    "original": "/artwork/art_11.PNG",
+    "full": "/artwork/full/art_11.webp",
+    "thumb": "/artwork/thumbs/art_11.webp",
+    "blur": "/artwork/blur/art_11.webp"
+  },
+  {
+    "id": 12,
+    "original": "/artwork/art_12.PNG",
+    "full": "/artwork/full/art_12.webp",
+    "thumb": "/artwork/thumbs/art_12.webp",
+    "blur": "/artwork/blur/art_12.webp"
+  },
+  {
+    "id": 13,
+    "original": "/artwork/art_13.PNG",
+    "full": "/artwork/full/art_13.webp",
+    "thumb": "/artwork/thumbs/art_13.webp",
+    "blur": "/artwork/blur/art_13.webp"
+  },
+  {
+    "id": 14,
+    "original": "/artwork/art_14.PNG",
+    "full": "/artwork/full/art_14.webp",
+    "thumb": "/artwork/thumbs/art_14.webp",
+    "blur": "/artwork/blur/art_14.webp"
+  },
+  {
+    "id": 15,
+    "original": "/artwork/art_15.PNG",
+    "full": "/artwork/full/art_15.webp",
+    "thumb": "/artwork/thumbs/art_15.webp",
+    "blur": "/artwork/blur/art_15.webp"
+  },
+  {
+    "id": 16,
+    "original": "/artwork/art_16.PNG",
+    "full": "/artwork/full/art_16.webp",
+    "thumb": "/artwork/thumbs/art_16.webp",
+    "blur": "/artwork/blur/art_16.webp"
+  },
+  {
+    "id": 17,
+    "original": "/artwork/art_17.PNG",
+    "full": "/artwork/full/art_17.webp",
+    "thumb": "/artwork/thumbs/art_17.webp",
+    "blur": "/artwork/blur/art_17.webp"
+  },
+  {
+    "id": 18,
+    "original": "/artwork/art_18.PNG",
+    "full": "/artwork/full/art_18.webp",
+    "thumb": "/artwork/thumbs/art_18.webp",
+    "blur": "/artwork/blur/art_18.webp"
+  },
+  {
+    "id": 19,
+    "original": "/artwork/art_19.PNG",
+    "full": "/artwork/full/art_19.webp",
+    "thumb": "/artwork/thumbs/art_19.webp",
+    "blur": "/artwork/blur/art_19.webp"
+  },
+  {
+    "id": 20,
+    "original": "/artwork/art_20.PNG",
+    "full": "/artwork/full/art_20.webp",
+    "thumb": "/artwork/thumbs/art_20.webp",
+    "blur": "/artwork/blur/art_20.webp"
+  },
+  {
+    "id": 21,
+    "original": "/artwork/art_21.PNG",
+    "full": "/artwork/full/art_21.webp",
+    "thumb": "/artwork/thumbs/art_21.webp",
+    "blur": "/artwork/blur/art_21.webp"
+  },
+  {
+    "id": 22,
+    "original": "/artwork/art_22.PNG",
+    "full": "/artwork/full/art_22.webp",
+    "thumb": "/artwork/thumbs/art_22.webp",
+    "blur": "/artwork/blur/art_22.webp"
+  },
+  {
+    "id": 23,
+    "original": "/artwork/art_23.PNG",
+    "full": "/artwork/full/art_23.webp",
+    "thumb": "/artwork/thumbs/art_23.webp",
+    "blur": "/artwork/blur/art_23.webp"
+  },
+  {
+    "id": 24,
+    "original": "/artwork/art_24.PNG",
+    "full": "/artwork/full/art_24.webp",
+    "thumb": "/artwork/thumbs/art_24.webp",
+    "blur": "/artwork/blur/art_24.webp"
+  },
+  {
+    "id": 25,
+    "original": "/artwork/art_25.PNG",
+    "full": "/artwork/full/art_25.webp",
+    "thumb": "/artwork/thumbs/art_25.webp",
+    "blur": "/artwork/blur/art_25.webp"
+  },
+  {
+    "id": 26,
+    "original": "/artwork/art_26.PNG",
+    "full": "/artwork/full/art_26.webp",
+    "thumb": "/artwork/thumbs/art_26.webp",
+    "blur": "/artwork/blur/art_26.webp"
+  },
+  {
+    "id": 27,
+    "original": "/artwork/art_27.PNG",
+    "full": "/artwork/full/art_27.webp",
+    "thumb": "/artwork/thumbs/art_27.webp",
+    "blur": "/artwork/blur/art_27.webp"
+  },
+  {
+    "id": 28,
+    "original": "/artwork/art_28.PNG",
+    "full": "/artwork/full/art_28.webp",
+    "thumb": "/artwork/thumbs/art_28.webp",
+    "blur": "/artwork/blur/art_28.webp"
+  },
+  {
+    "id": 29,
+    "original": "/artwork/art_29.PNG",
+    "full": "/artwork/full/art_29.webp",
+    "thumb": "/artwork/thumbs/art_29.webp",
+    "blur": "/artwork/blur/art_29.webp"
+  },
+  {
+    "id": 30,
+    "original": "/artwork/art_30.PNG",
+    "full": "/artwork/full/art_30.webp",
+    "thumb": "/artwork/thumbs/art_30.webp",
+    "blur": "/artwork/blur/art_30.webp"
+  },
+  {
+    "id": 31,
+    "original": "/artwork/art_31.PNG",
+    "full": "/artwork/full/art_31.webp",
+    "thumb": "/artwork/thumbs/art_31.webp",
+    "blur": "/artwork/blur/art_31.webp"
+  },
+  {
+    "id": 32,
+    "original": "/artwork/art_32.PNG",
+    "full": "/artwork/full/art_32.webp",
+    "thumb": "/artwork/thumbs/art_32.webp",
+    "blur": "/artwork/blur/art_32.webp"
+  },
+  {
+    "id": 33,
+    "original": "/artwork/art_33.PNG",
+    "full": "/artwork/full/art_33.webp",
+    "thumb": "/artwork/thumbs/art_33.webp",
+    "blur": "/artwork/blur/art_33.webp"
+  },
+  {
+    "id": 34,
+    "original": "/artwork/art_34.PNG",
+    "full": "/artwork/full/art_34.webp",
+    "thumb": "/artwork/thumbs/art_34.webp",
+    "blur": "/artwork/blur/art_34.webp"
+  },
+  {
+    "id": 35,
+    "original": "/artwork/art_35.PNG",
+    "full": "/artwork/full/art_35.webp",
+    "thumb": "/artwork/thumbs/art_35.webp",
+    "blur": "/artwork/blur/art_35.webp"
+  },
+  {
+    "id": 36,
+    "original": "/artwork/art_36.PNG",
+    "full": "/artwork/full/art_36.webp",
+    "thumb": "/artwork/thumbs/art_36.webp",
+    "blur": "/artwork/blur/art_36.webp"
+  },
+  {
+    "id": 37,
+    "original": "/artwork/art_37.PNG",
+    "full": "/artwork/full/art_37.webp",
+    "thumb": "/artwork/thumbs/art_37.webp",
+    "blur": "/artwork/blur/art_37.webp"
+  },
+  {
+    "id": 38,
+    "original": "/artwork/art_38.PNG",
+    "full": "/artwork/full/art_38.webp",
+    "thumb": "/artwork/thumbs/art_38.webp",
+    "blur": "/artwork/blur/art_38.webp"
+  },
+  {
+    "id": 39,
+    "original": "/artwork/art_39.PNG",
+    "full": "/artwork/full/art_39.webp",
+    "thumb": "/artwork/thumbs/art_39.webp",
+    "blur": "/artwork/blur/art_39.webp"
+  },
+  {
+    "id": 40,
+    "original": "/artwork/art_40.PNG",
+    "full": "/artwork/full/art_40.webp",
+    "thumb": "/artwork/thumbs/art_40.webp",
+    "blur": "/artwork/blur/art_40.webp"
+  },
+  {
+    "id": 41,
+    "original": "/artwork/art_41.PNG",
+    "full": "/artwork/full/art_41.webp",
+    "thumb": "/artwork/thumbs/art_41.webp",
+    "blur": "/artwork/blur/art_41.webp"
+  },
+  {
+    "id": 42,
+    "original": "/artwork/art_42.PNG",
+    "full": "/artwork/full/art_42.webp",
+    "thumb": "/artwork/thumbs/art_42.webp",
+    "blur": "/artwork/blur/art_42.webp"
+  },
+  {
+    "id": 43,
+    "original": "/artwork/art_43.PNG",
+    "full": "/artwork/full/art_43.webp",
+    "thumb": "/artwork/thumbs/art_43.webp",
+    "blur": "/artwork/blur/art_43.webp"
+  },
+  {
+    "id": 44,
+    "original": "/artwork/art_44.PNG",
+    "full": "/artwork/full/art_44.webp",
+    "thumb": "/artwork/thumbs/art_44.webp",
+    "blur": "/artwork/blur/art_44.webp"
+  },
+  {
+    "id": 45,
+    "original": "/artwork/art_45.PNG",
+    "full": "/artwork/full/art_45.webp",
+    "thumb": "/artwork/thumbs/art_45.webp",
+    "blur": "/artwork/blur/art_45.webp"
+  },
+  {
+    "id": 46,
+    "original": "/artwork/art_46.PNG",
+    "full": "/artwork/full/art_46.webp",
+    "thumb": "/artwork/thumbs/art_46.webp",
+    "blur": "/artwork/blur/art_46.webp"
+  },
+  {
+    "id": 47,
+    "original": "/artwork/art_47.PNG",
+    "full": "/artwork/full/art_47.webp",
+    "thumb": "/artwork/thumbs/art_47.webp",
+    "blur": "/artwork/blur/art_47.webp"
+  },
+  {
+    "id": 48,
+    "original": "/artwork/art_48.PNG",
+    "full": "/artwork/full/art_48.webp",
+    "thumb": "/artwork/thumbs/art_48.webp",
+    "blur": "/artwork/blur/art_48.webp"
+  },
+  {
+    "id": 49,
+    "original": "/artwork/art_49.PNG",
+    "full": "/artwork/full/art_49.webp",
+    "thumb": "/artwork/thumbs/art_49.webp",
+    "blur": "/artwork/blur/art_49.webp"
+  },
+  {
+    "id": 50,
+    "original": "/artwork/art_50.PNG",
+    "full": "/artwork/full/art_50.webp",
+    "thumb": "/artwork/thumbs/art_50.webp",
+    "blur": "/artwork/blur/art_50.webp"
+  },
+  {
+    "id": 51,
+    "original": "/artwork/art_51.PNG",
+    "full": "/artwork/full/art_51.webp",
+    "thumb": "/artwork/thumbs/art_51.webp",
+    "blur": "/artwork/blur/art_51.webp"
+  },
+  {
+    "id": 52,
+    "original": "/artwork/art_52.PNG",
+    "full": "/artwork/full/art_52.webp",
+    "thumb": "/artwork/thumbs/art_52.webp",
+    "blur": "/artwork/blur/art_52.webp"
+  },
+  {
+    "id": 53,
+    "original": "/artwork/art_53.PNG",
+    "full": "/artwork/full/art_53.webp",
+    "thumb": "/artwork/thumbs/art_53.webp",
+    "blur": "/artwork/blur/art_53.webp"
+  },
+  {
+    "id": 54,
+    "original": "/artwork/art_54.PNG",
+    "full": "/artwork/full/art_54.webp",
+    "thumb": "/artwork/thumbs/art_54.webp",
+    "blur": "/artwork/blur/art_54.webp"
+  },
+  {
+    "id": 55,
+    "original": "/artwork/art_55.PNG",
+    "full": "/artwork/full/art_55.webp",
+    "thumb": "/artwork/thumbs/art_55.webp",
+    "blur": "/artwork/blur/art_55.webp"
+  },
+  {
+    "id": 56,
+    "original": "/artwork/art_56.PNG",
+    "full": "/artwork/full/art_56.webp",
+    "thumb": "/artwork/thumbs/art_56.webp",
+    "blur": "/artwork/blur/art_56.webp"
+  },
+  {
+    "id": 57,
+    "original": "/artwork/art_57.PNG",
+    "full": "/artwork/full/art_57.webp",
+    "thumb": "/artwork/thumbs/art_57.webp",
+    "blur": "/artwork/blur/art_57.webp"
+  },
+  {
+    "id": 58,
+    "original": "/artwork/art_58.PNG",
+    "full": "/artwork/full/art_58.webp",
+    "thumb": "/artwork/thumbs/art_58.webp",
+    "blur": "/artwork/blur/art_58.webp"
+  },
+  {
+    "id": 59,
+    "original": "/artwork/art_59.PNG",
+    "full": "/artwork/full/art_59.webp",
+    "thumb": "/artwork/thumbs/art_59.webp",
+    "blur": "/artwork/blur/art_59.webp"
+  },
+  {
+    "id": 60,
+    "original": "/artwork/art_60.PNG",
+    "full": "/artwork/full/art_60.webp",
+    "thumb": "/artwork/thumbs/art_60.webp",
+    "blur": "/artwork/blur/art_60.webp"
+  },
+  {
+    "id": 61,
+    "original": "/artwork/art_61.PNG",
+    "full": "/artwork/full/art_61.webp",
+    "thumb": "/artwork/thumbs/art_61.webp",
+    "blur": "/artwork/blur/art_61.webp"
+  },
+  {
+    "id": 62,
+    "original": "/artwork/art_62.PNG",
+    "full": "/artwork/full/art_62.webp",
+    "thumb": "/artwork/thumbs/art_62.webp",
+    "blur": "/artwork/blur/art_62.webp"
+  },
+  {
+    "id": 63,
+    "original": "/artwork/art_63.PNG",
+    "full": "/artwork/full/art_63.webp",
+    "thumb": "/artwork/thumbs/art_63.webp",
+    "blur": "/artwork/blur/art_63.webp"
+  },
+  {
+    "id": 64,
+    "original": "/artwork/art_64.PNG",
+    "full": "/artwork/full/art_64.webp",
+    "thumb": "/artwork/thumbs/art_64.webp",
+    "blur": "/artwork/blur/art_64.webp"
+  },
+  {
+    "id": 65,
+    "original": "/artwork/art_65.jpg",
+    "full": "/artwork/full/art_65.webp",
+    "thumb": "/artwork/thumbs/art_65.webp",
+    "blur": "/artwork/blur/art_65.webp"
+  },
+  {
+    "id": 66,
+    "original": "/artwork/art_66.jpg",
+    "full": "/artwork/full/art_66.webp",
+    "thumb": "/artwork/thumbs/art_66.webp",
+    "blur": "/artwork/blur/art_66.webp"
+  },
+  {
+    "id": 67,
+    "original": "/artwork/art_67.jpg",
+    "full": "/artwork/full/art_67.webp",
+    "thumb": "/artwork/thumbs/art_67.webp",
+    "blur": "/artwork/blur/art_67.webp"
+  },
+  {
+    "id": 68,
+    "original": "/artwork/art_68.jpg",
+    "full": "/artwork/full/art_68.webp",
+    "thumb": "/artwork/thumbs/art_68.webp",
+    "blur": "/artwork/blur/art_68.webp"
+  },
+  {
+    "id": 69,
+    "original": "/artwork/art_69.jpg",
+    "full": "/artwork/full/art_69.webp",
+    "thumb": "/artwork/thumbs/art_69.webp",
+    "blur": "/artwork/blur/art_69.webp"
+  },
+  {
+    "id": 70,
+    "original": "/artwork/art_70.jpg",
+    "full": "/artwork/full/art_70.webp",
+    "thumb": "/artwork/thumbs/art_70.webp",
+    "blur": "/artwork/blur/art_70.webp"
+  },
+  {
+    "id": 71,
+    "original": "/artwork/art_71.jpg",
+    "full": "/artwork/full/art_71.webp",
+    "thumb": "/artwork/thumbs/art_71.webp",
+    "blur": "/artwork/blur/art_71.webp"
+  },
+  {
+    "id": 72,
+    "original": "/artwork/art_72.jpg",
+    "full": "/artwork/full/art_72.webp",
+    "thumb": "/artwork/thumbs/art_72.webp",
+    "blur": "/artwork/blur/art_72.webp"
+  },
+  {
+    "id": 73,
+    "original": "/artwork/art_73.jpg",
+    "full": "/artwork/full/art_73.webp",
+    "thumb": "/artwork/thumbs/art_73.webp",
+    "blur": "/artwork/blur/art_73.webp"
+  },
+  {
+    "id": 74,
+    "original": "/artwork/art_74.jpg",
+    "full": "/artwork/full/art_74.webp",
+    "thumb": "/artwork/thumbs/art_74.webp",
+    "blur": "/artwork/blur/art_74.webp"
+  },
+  {
+    "id": 75,
+    "original": "/artwork/art_75.jpg",
+    "full": "/artwork/full/art_75.webp",
+    "thumb": "/artwork/thumbs/art_75.webp",
+    "blur": "/artwork/blur/art_75.webp"
+  },
+  {
+    "id": 76,
+    "original": "/artwork/art_76.jpg",
+    "full": "/artwork/full/art_76.webp",
+    "thumb": "/artwork/thumbs/art_76.webp",
+    "blur": "/artwork/blur/art_76.webp"
+  },
+  {
+    "id": 77,
+    "original": "/artwork/art_77.jpg",
+    "full": "/artwork/full/art_77.webp",
+    "thumb": "/artwork/thumbs/art_77.webp",
+    "blur": "/artwork/blur/art_77.webp"
+  },
+  {
+    "id": 78,
+    "original": "/artwork/art_78.jpg",
+    "full": "/artwork/full/art_78.webp",
+    "thumb": "/artwork/thumbs/art_78.webp",
+    "blur": "/artwork/blur/art_78.webp"
+  },
+  {
+    "id": 79,
+    "original": "/artwork/art_79.jpg",
+    "full": "/artwork/full/art_79.webp",
+    "thumb": "/artwork/thumbs/art_79.webp",
+    "blur": "/artwork/blur/art_79.webp"
+  },
+  {
+    "id": 80,
+    "original": "/artwork/art_80.jpg",
+    "full": "/artwork/full/art_80.webp",
+    "thumb": "/artwork/thumbs/art_80.webp",
+    "blur": "/artwork/blur/art_80.webp"
+  }
+]

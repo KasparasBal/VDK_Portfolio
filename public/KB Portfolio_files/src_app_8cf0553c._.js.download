@@ -1,0 +1,474 @@
+(globalThis.TURBOPACK = globalThis.TURBOPACK || []).push([typeof document === "object" ? document.currentScript : undefined, {
+
+"[project]/src/app/[locale]/art/art.module.css [app-client] (css module)": ((__turbopack_context__) => {
+
+__turbopack_context__.v({
+  "closeBtn": "art-module__-JGKpG__closeBtn",
+  "image": "art-module__-JGKpG__image",
+  "imageButton": "art-module__-JGKpG__imageButton",
+  "infoButton": "art-module__-JGKpG__infoButton",
+  "infoContent": "art-module__-JGKpG__infoContent",
+  "infoHeader": "art-module__-JGKpG__infoHeader",
+  "infoIcon": "art-module__-JGKpG__infoIcon",
+  "infoPanel": "art-module__-JGKpG__infoPanel",
+  "infoPanelOpen": "art-module__-JGKpG__infoPanelOpen",
+  "infoText": "art-module__-JGKpG__infoText",
+  "infoThumb": "art-module__-JGKpG__infoThumb",
+  "infoThumbWrap": "art-module__-JGKpG__infoThumbWrap",
+  "infoTitle": "art-module__-JGKpG__infoTitle",
+  "lightbox": "art-module__-JGKpG__lightbox",
+  "lightboxClose": "art-module__-JGKpG__lightboxClose",
+  "lightboxImage": "art-module__-JGKpG__lightboxImage",
+  "lightboxInner": "art-module__-JGKpG__lightboxInner",
+  "lightboxVisible": "art-module__-JGKpG__lightboxVisible",
+  "masonry": "art-module__-JGKpG__masonry",
+  "masonryItem": "art-module__-JGKpG__masonryItem",
+  "viewportStatic": "art-module__-JGKpG__viewportStatic",
+});
+}),
+"[project]/src/app/components/footer.module.css [app-client] (css module)": ((__turbopack_context__) => {
+
+__turbopack_context__.v({
+  "ebdText": "footer-module__4boSWa__ebdText",
+  "footer": "footer-module__4boSWa__footer",
+  "footerText": "footer-module__4boSWa__footerText",
+});
+}),
+"[project]/src/app/components/footer.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { k: __turbopack_refresh__, m: module } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "default": ()=>Footer
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$footer$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/src/app/components/footer.module.css [app-client] (css module)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$i18n$2f$I18nProvider$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/i18n/I18nProvider.tsx [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
+;
+;
+function Footer() {
+    _s();
+    const { t } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$i18n$2f$I18nProvider$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useI18n"])();
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$footer$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].footer,
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$footer$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].ebdText,
+                children: "EBD"
+            }, void 0, false, {
+                fileName: "[project]/src/app/components/footer.tsx",
+                lineNumber: 8,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$footer$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].footerText,
+                children: [
+                    "KASPARAS BALYS ",
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                        fileName: "[project]/src/app/components/footer.tsx",
+                        lineNumber: 10,
+                        columnNumber: 24
+                    }, this),
+                    " 2025."
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/app/components/footer.tsx",
+                lineNumber: 9,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$footer$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].footerText,
+                children: [
+                    t.footer.designWebArt,
+                    " ",
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                        fileName: "[project]/src/app/components/footer.tsx",
+                        lineNumber: 13,
+                        columnNumber: 33
+                    }, this),
+                    t.footer.portfolio
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/app/components/footer.tsx",
+                lineNumber: 12,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/app/components/footer.tsx",
+        lineNumber: 7,
+        columnNumber: 5
+    }, this);
+}
+_s(Footer, "82N5KF9nLzZ6+2WH7KIjzIXRkLw=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$i18n$2f$I18nProvider$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useI18n"]
+    ];
+});
+_c = Footer;
+var _c;
+__turbopack_context__.k.register(_c, "Footer");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
+}
+}}),
+"[project]/src/app/[locale]/art/page.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { k: __turbopack_refresh__, m: module } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "default": ()=>ArtPage
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f5b$locale$5d2f$art$2f$art$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/src/app/[locale]/art/art.module.css [app-client] (css module)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$footer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/app/components/footer.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$i18n$2f$I18nProvider$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/i18n/I18nProvider.tsx [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
+"use client";
+;
+;
+;
+;
+;
+const PLACEHOLDER_SRC = "/placeholder.jpg"; // Put your artworks in /public and update paths later
+function ArtPage() {
+    var _items_find, _t_artPage, _items_find1, _t_artPage1;
+    _s();
+    const { t } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$i18n$2f$I18nProvider$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useI18n"])();
+    const items = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
+        "ArtPage.useMemo[items]": ()=>[
+                {
+                    id: 1,
+                    src: "/placeholder.jpg"
+                },
+                {
+                    id: 2,
+                    src: "/placeholder-2.jpg"
+                },
+                {
+                    id: 3,
+                    src: "/placeholder-3.jpg"
+                },
+                {
+                    id: 4,
+                    src: "/placeholder.jpg"
+                },
+                {
+                    id: 5,
+                    src: "/placeholder-2.jpg"
+                },
+                {
+                    id: 6,
+                    src: "/placeholder-3.jpg"
+                },
+                {
+                    id: 7,
+                    src: "/placeholder.jpg"
+                },
+                {
+                    id: 8,
+                    src: "/placeholder-2.jpg"
+                },
+                {
+                    id: 9,
+                    src: "/placeholder-3.jpg"
+                },
+                {
+                    id: 10,
+                    src: "/placeholder.jpg"
+                },
+                {
+                    id: 11,
+                    src: "/placeholder-2.jpg"
+                },
+                {
+                    id: 12,
+                    src: "/placeholder-3.jpg"
+                },
+                {
+                    id: 13,
+                    src: "/placeholder.jpg"
+                },
+                {
+                    id: 14,
+                    src: "/placeholder-2.jpg"
+                },
+                {
+                    id: 15,
+                    src: "/placeholder-3.jpg"
+                },
+                {
+                    id: 16,
+                    src: "/placeholder.jpg"
+                },
+                {
+                    id: 17,
+                    src: "/placeholder-2.jpg"
+                },
+                {
+                    id: 18,
+                    src: "/placeholder-3.jpg"
+                },
+                {
+                    id: 19,
+                    src: "/placeholder.jpg"
+                },
+                {
+                    id: 20,
+                    src: "/placeholder-2.jpg"
+                },
+                {
+                    id: 21,
+                    src: "/placeholder-3.jpg"
+                },
+                {
+                    id: 22,
+                    src: "/placeholder.jpg"
+                },
+                {
+                    id: 23,
+                    src: "/placeholder-2.jpg"
+                },
+                {
+                    id: 24,
+                    src: "/placeholder-3.jpg"
+                }
+            ]
+    }["ArtPage.useMemo[items]"], []);
+    const [selected, setSelected] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [isInfoOpen, setIsInfoOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    var _t_artPage_close, _t_artPage_details;
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f5b$locale$5d2f$art$2f$art$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].viewportStatic,
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f5b$locale$5d2f$art$2f$art$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].masonry,
+                    children: items.map((art)=>{
+                        var _t_artPage;
+                        var _t_artPage_details;
+                        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f5b$locale$5d2f$art$2f$art$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].masonryItem,
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f5b$locale$5d2f$art$2f$art$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].imageButton,
+                                    onClick: ()=>setSelected(art.id),
+                                    "aria-label": "View Artwork ".concat(art.id),
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                        src: art.src,
+                                        alt: "Artwork ".concat(art.id),
+                                        width: 800,
+                                        height: 600,
+                                        sizes: "(max-width: 768px) 50vw, 33vw",
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f5b$locale$5d2f$art$2f$art$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].image,
+                                        priority: art.id <= 6,
+                                        unoptimized: true
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/[locale]/art/page.tsx",
+                                        lineNumber: 56,
+                                        columnNumber: 17
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/[locale]/art/page.tsx",
+                                    lineNumber: 51,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f5b$locale$5d2f$art$2f$art$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].infoButton,
+                                    onClick: ()=>{
+                                        setSelected(art.id);
+                                        setIsInfoOpen(true);
+                                    },
+                                    "aria-label": "".concat((_t_artPage_details = (_t_artPage = t.artPage) === null || _t_artPage === void 0 ? void 0 : _t_artPage.details) !== null && _t_artPage_details !== void 0 ? _t_artPage_details : "Details", ": Artwork ").concat(art.id),
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                        src: "/read-cv-logo-fill.svg",
+                                        alt: "info",
+                                        width: 24,
+                                        height: 24,
+                                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f5b$locale$5d2f$art$2f$art$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].infoIcon
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/[locale]/art/page.tsx",
+                                        lineNumber: 77,
+                                        columnNumber: 17
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/[locale]/art/page.tsx",
+                                    lineNumber: 67,
+                                    columnNumber: 15
+                                }, this)
+                            ]
+                        }, art.id, true, {
+                            fileName: "[project]/src/app/[locale]/art/page.tsx",
+                            lineNumber: 50,
+                            columnNumber: 13
+                        }, this);
+                    })
+                }, void 0, false, {
+                    fileName: "[project]/src/app/[locale]/art/page.tsx",
+                    lineNumber: 48,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/app/[locale]/art/page.tsx",
+                lineNumber: 47,
+                columnNumber: 7
+            }, this),
+            selected !== null && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "".concat(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f5b$locale$5d2f$art$2f$art$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].lightbox, " ").concat(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f5b$locale$5d2f$art$2f$art$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].lightboxVisible),
+                onClick: ()=>setSelected(null),
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f5b$locale$5d2f$art$2f$art$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].lightboxClose,
+                        "aria-label": "Close"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/[locale]/art/page.tsx",
+                        lineNumber: 95,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f5b$locale$5d2f$art$2f$art$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].lightboxInner,
+                        onClick: (e)=>e.stopPropagation(),
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            src: ((_items_find = items.find((a)=>a.id === selected)) === null || _items_find === void 0 ? void 0 : _items_find.src) || PLACEHOLDER_SRC,
+                            alt: "Artwork ".concat(selected),
+                            fill: true,
+                            sizes: "100vw",
+                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f5b$locale$5d2f$art$2f$art$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].lightboxImage,
+                            unoptimized: true
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/[locale]/art/page.tsx",
+                            lineNumber: 100,
+                            columnNumber: 13
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/[locale]/art/page.tsx",
+                        lineNumber: 96,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/app/[locale]/art/page.tsx",
+                lineNumber: 91,
+                columnNumber: 9
+            }, this),
+            isInfoOpen && selected !== null && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("aside", {
+                className: "".concat(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f5b$locale$5d2f$art$2f$art$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].infoPanel, " ").concat(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f5b$locale$5d2f$art$2f$art$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].infoPanelOpen),
+                role: "dialog",
+                "aria-modal": "true",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f5b$locale$5d2f$art$2f$art$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].infoHeader,
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f5b$locale$5d2f$art$2f$art$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].infoTitle,
+                                children: "Artwork ".concat(selected)
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/[locale]/art/page.tsx",
+                                lineNumber: 119,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f5b$locale$5d2f$art$2f$art$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].closeBtn,
+                                onClick: ()=>setIsInfoOpen(false),
+                                children: (_t_artPage_close = (_t_artPage = t.artPage) === null || _t_artPage === void 0 ? void 0 : _t_artPage.close) !== null && _t_artPage_close !== void 0 ? _t_artPage_close : "Close"
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/[locale]/art/page.tsx",
+                                lineNumber: 120,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/app/[locale]/art/page.tsx",
+                        lineNumber: 118,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f5b$locale$5d2f$art$2f$art$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].infoContent,
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f5b$locale$5d2f$art$2f$art$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].infoThumbWrap,
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                    src: ((_items_find1 = items.find((a)=>a.id === selected)) === null || _items_find1 === void 0 ? void 0 : _items_find1.src) || PLACEHOLDER_SRC,
+                                    alt: "Thumb ".concat(selected),
+                                    fill: true,
+                                    sizes: "300px",
+                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f5b$locale$5d2f$art$2f$art$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].infoThumb,
+                                    unoptimized: true
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/[locale]/art/page.tsx",
+                                    lineNumber: 129,
+                                    columnNumber: 15
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/[locale]/art/page.tsx",
+                                lineNumber: 128,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f5b$locale$5d2f$art$2f$art$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].infoText,
+                                children: (_t_artPage_details = (_t_artPage1 = t.artPage) === null || _t_artPage1 === void 0 ? void 0 : _t_artPage1.details) !== null && _t_artPage_details !== void 0 ? _t_artPage_details : "Artwork details"
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/[locale]/art/page.tsx",
+                                lineNumber: 140,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f5b$locale$5d2f$art$2f$art$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].infoButton,
+                                onClick: ()=>setSelected(selected),
+                                "aria-label": "Enlarge",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                    src: "/read-cv-logo-fill.svg",
+                                    alt: "enlarge",
+                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f5b$locale$5d2f$art$2f$art$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].infoIcon
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/[locale]/art/page.tsx",
+                                    lineNumber: 148,
+                                    columnNumber: 15
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/[locale]/art/page.tsx",
+                                lineNumber: 143,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/app/[locale]/art/page.tsx",
+                        lineNumber: 127,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/app/[locale]/art/page.tsx",
+                lineNumber: 113,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$footer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                fileName: "[project]/src/app/[locale]/art/page.tsx",
+                lineNumber: 158,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true);
+}
+_s(ArtPage, "idvtpSMx/LqbBpfZ5/c8IpzyZy4=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$i18n$2f$I18nProvider$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useI18n"]
+    ];
+});
+_c = ArtPage;
+var _c;
+__turbopack_context__.k.register(_c, "ArtPage");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
+}
+}}),
+}]);
+
+//# sourceMappingURL=src_app_8cf0553c._.js.map

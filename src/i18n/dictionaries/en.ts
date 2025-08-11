@@ -59,6 +59,15 @@ export type Dictionary = {
     thoughts: string;
     results: string;
   }>;
+  artPage?: {
+    info: string;
+    close: string;
+    details: string;
+    medium: string;
+    idea: string;
+    meaning: string;
+    inspiration: string;
+  };
 };
 
 export const en: Dictionary = {
@@ -198,4 +207,13 @@ export const en: Dictionary = {
         "Reduced time to insights by 50% and improved data-driven decisions across the organization.",
     },
   ],
+  artPage: {
+    info: "Info",
+    close: "Close",
+    details: "Artwork details",
+    medium: "MEDIUM",
+    idea: "IDEA",
+    meaning: "MEANING",
+    inspiration: "INSPIRATION",
+  },
 };

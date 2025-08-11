@@ -1,0 +1,940 @@
+(globalThis.TURBOPACK = globalThis.TURBOPACK || []).push([typeof document === "object" ? document.currentScript : undefined, {
+
+"[project]/src/app/components/floating-nav.module.css [app-client] (css module)": ((__turbopack_context__) => {
+
+__turbopack_context__.v({
+  "active": "floating-nav-module__zT9Ama__active",
+  "contact_icon_container": "floating-nav-module__zT9Ama__contact_icon_container",
+  "door": "floating-nav-module__zT9Ama__door",
+  "dropdownItem": "floating-nav-module__zT9Ama__dropdownItem",
+  "floatingNav": "floating-nav-module__zT9Ama__floatingNav",
+  "home_icon_container": "floating-nav-module__zT9Ama__home_icon_container",
+  "icon": "floating-nav-module__zT9Ama__icon",
+  "iconContainer": "floating-nav-module__zT9Ama__iconContainer",
+  "label": "floating-nav-module__zT9Ama__label",
+  "langLabel": "floating-nav-module__zT9Ama__langLabel",
+  "navContainer": "floating-nav-module__zT9Ama__navContainer",
+  "navItem": "floating-nav-module__zT9Ama__navItem",
+  "navItemWrapper": "floating-nav-module__zT9Ama__navItemWrapper",
+  "projectsDropdown": "floating-nav-module__zT9Ama__projectsDropdown",
+  "projects_icon_container": "floating-nav-module__zT9Ama__projects_icon_container",
+  "rectangle1": "floating-nav-module__zT9Ama__rectangle1",
+  "rectangle2": "floating-nav-module__zT9Ama__rectangle2",
+  "rectangle3": "floating-nav-module__zT9Ama__rectangle3",
+  "rectangle4": "floating-nav-module__zT9Ama__rectangle4",
+  "upperTriangle": "floating-nav-module__zT9Ama__upperTriangle",
+  "window1": "floating-nav-module__zT9Ama__window1",
+  "window2": "floating-nav-module__zT9Ama__window2",
+  "window3": "floating-nav-module__zT9Ama__window3",
+  "window4": "floating-nav-module__zT9Ama__window4",
+});
+}),
+"[project]/src/i18n/dictionaries/en.ts [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { k: __turbopack_refresh__, m: module } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "en": ()=>en
+});
+const en = {
+    nav: {
+        home: "Home",
+        projects: "Projects",
+        contact: "Contact",
+        langShort: "EN",
+        langToggleAria: "Switch language to Lithuanian"
+    },
+    home: {
+        about: "ABOUT",
+        aspirePrefix: "I ASPIRE TO BE A GREAT",
+        designer: "DESIGNER",
+        more: "MORE",
+        projects: "PROJECTS",
+        web: "WEB.",
+        art: "ART.",
+        contactTitle: "TALK?",
+        links: "Links",
+        information: "Information",
+        backToTop: "BACK TO TOP",
+        intro1: "I have a background in programming & art. I love all kinds of approaches to expression & find joy in exploring them.",
+        intro2: "Although I have a great interest in UI & UX for its psychological analysis of the reader, I also immensely enjoy web experiences that provide unique experiences."
+    },
+    form: {
+        name: "Name",
+        subject: "Subject",
+        message: "Your Message",
+        send: "Send",
+        sending: "Sending…",
+        success: "Message sent successfully!",
+        error: "Failed to send message. Please try again."
+    },
+    overlay: {
+        caseStudy: "CASE STUDY",
+        brief: "BRIEF",
+        design: "DESIGN",
+        challenges: "CHALLENGES",
+        thoughts: "THOUGHTS",
+        results: "RESULTS",
+        closeAria: "Close"
+    },
+    footer: {
+        designWebArt: "DESIGN/WEB/ART",
+        portfolio: "PORTFOLIO"
+    },
+    projectsPage: {
+        title: "PROJECTS"
+    },
+    projectsData: [
+        {
+            id: "vetinn",
+            title: "Vetinn",
+            description: "Family-run veterinary clinic website that invokes a sense of cuteness & care without forsaking professionalism.",
+            image: "/project_thumbnails/vetinn_thumb.png",
+            brief: "Create a modern, user-friendly veterinary management system that improves clinic efficiency and patient care quality.",
+            design: "Clean, medical-grade interface with emphasis on accessibility and quick information retrieval. Color scheme optimized for long viewing periods.",
+            challenges: "Complex data relationships between patients, treatments, and appointments. Ensuring privacy while maintaining usability.",
+            thoughts: "The balance between comprehensive functionality and simplicity was crucial. Medical software must be both powerful and easy to use under pressure.",
+            results: "Reduced appointment scheduling time by 40% and improved patient record accuracy by 25%."
+        },
+        {
+            id: "trt",
+            title: "TRT Baltic",
+            description: "A specialized platform for testosterone replacement therapy with advanced forms & a visual language targeted at men.",
+            image: "/project_thumbnails/trt_thumb.png",
+            brief: "Develop a secure platform for TRT patients and healthcare providers to manage treatment plans and monitor progress.",
+            design: "Professional medical interface with clear data visualization and secure communication channels. Emphasis on privacy and accuracy.",
+            challenges: "Strict data security requirements and complex treatment protocol management.",
+            thoughts: "Medical applications require exceptional attention to detail and user experience, as errors can have serious consequences.",
+            results: "Improved treatment adherence by 35% and enhanced communication between patients and providers."
+        },
+        {
+            id: "Portfolio",
+            title: "Personal Portfolio",
+            description: "A modern, interactive portfolio showcasing design and development work with smooth animations and engaging user experience.",
+            image: "/project_thumbnails/portfolio_thumb.png",
+            brief: "Create a distinctive portfolio that demonstrates both design skills and technical capabilities while providing an engaging user experience.",
+            design: "Minimalist approach with bold typography and smooth animations. Focus on showcasing work effectively without overwhelming the user.",
+            challenges: "Balancing visual appeal with performance and ensuring cross-browser compatibility for complex animations.",
+            thoughts: "Portfolio design should reflect the designer's style while remaining accessible and functional for all users.",
+            results: "Increased engagement time by 60% and received positive feedback on user experience and visual design."
+        },
+        {
+            id: "Ecommerce",
+            title: "Layers.lt",
+            description: "A full-featured online shopping platform with advanced product filtering, secure payments, concise & clear information serving.",
+            image: "/project_thumbnails/layers_thumb.png",
+            brief: "Build a scalable e-commerce solution with modern UX patterns and robust backend functionality.",
+            design: "User-centric design with clear product presentation and streamlined checkout process. Mobile-first responsive design.",
+            challenges: "Complex product catalog management and ensuring smooth payment processing across multiple payment methods.",
+            thoughts: "E-commerce success depends heavily on reducing friction in the purchase process while maintaining security.",
+            results: "Increased conversion rate by 28% and reduced cart abandonment by 45%."
+        },
+        {
+            id: "vlkk",
+            title: "VL Kineziterapijos Klinika",
+            description: "Family-run physiotherapy clinic website aiming to reflect professionalism and a responsible approach to the body and clients.",
+            image: "/project_thumbnails/vlk_thumb.png",
+            brief: "Create an intuitive dashboard that transforms complex data into actionable insights for decision-making.",
+            design: "Data-focused interface with clear visual hierarchy and interactive charts. Dark theme for extended viewing comfort.",
+            challenges: "Presenting large datasets clearly without overwhelming users and ensuring real-time data accuracy.",
+            thoughts: "Effective data visualization requires understanding both the technical aspects and the human factors of information processing.",
+            results: "Reduced time to insights by 50% and improved data-driven decisions across the organization."
+        }
+    ],
+    artPage: {
+        info: "Info",
+        close: "Close",
+        details: "Artwork details"
+    }
+};
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
+}
+}}),
+"[project]/src/i18n/dictionaries/lt.ts [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { k: __turbopack_refresh__, m: module } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "lt": ()=>lt
+});
+const lt = {
+    nav: {
+        home: "Pradžia",
+        projects: "Projektai",
+        contact: "Kontaktai",
+        langShort: "LT",
+        langToggleAria: "Perjungti kalbą į anglų"
+    },
+    home: {
+        about: "APIE",
+        aspirePrefix: "SIEKIU TAPTI PUIKIU",
+        designer: "DIZAINERIU",
+        more: "DAUGIAU",
+        projects: "PROJEKTAI",
+        web: "WEB.",
+        art: "KŪRYBA",
+        contactTitle: "LABAS?",
+        links: "Nuorodos",
+        information: "Informacija",
+        backToTop: "ATGAL Į VIRŠŲ",
+        intro1: "Turiu programavimo ir meno pagrindus. Man patinka įvairūs raiškos būdai ir džiaugiuosi juos tyrinėdamas.",
+        intro2: "Nors labai domiuosi UI ir UX dėl psichologinio skaitytojo analizės, taip pat dievinu unikalias internetines patirtis."
+    },
+    form: {
+        name: "Vardas",
+        subject: "Tema",
+        message: "Jūsų žinutė",
+        send: "Siųsti",
+        sending: "Siunčiama…",
+        success: "Žinutė sėkmingai išsiųsta!",
+        error: "Nepavyko išsiųsti žinutės. Bandykite dar kartą."
+    },
+    overlay: {
+        caseStudy: "PROJEKTO ANALIZĖ",
+        brief: "SANTRAUKA",
+        design: "DIZAINAS",
+        challenges: "IŠŠŪKIAI",
+        thoughts: "MINTYS",
+        results: "REZULTATAI",
+        closeAria: "Uždaryti"
+    },
+    footer: {
+        designWebArt: "DIZAINAS/WEB/KŪRYBA",
+        portfolio: "PORTFOLIO"
+    },
+    projectsPage: {
+        title: "PROJEKTAI"
+    },
+    projectsData: [
+        {
+            id: "vetinn",
+            title: "Vetinn",
+            description: "Šeimos valdoma veterinarijos klinikos svetainė, kuri kuria mielumo ir rūpesčio įspūdį, neprarandant profesionalumo.",
+            image: "/project_thumbnails/vetinn_thumb.png",
+            brief: "Sukurti modernią, patogią veterinarijos valdymo sistemą, gerinančią klinikos efektyvumą ir pacientų priežiūros kokybę.",
+            design: "Švari, medicininio lygio sąsaja su akcentu į prieinamumą ir greitą informacijos radimą. Spalvų schema pritaikyta ilgam žiūrėjimui.",
+            challenges: "Sudėtingi duomenų ryšiai tarp pacientų, gydymų ir vizitų. Privatumo užtikrinimas išlaikant patogumą.",
+            thoughts: "Pusiausvyra tarp funkcionalumo ir paprastumo buvo esminė. Medicininė programinė įranga turi būti ir galinga, ir paprasta naudoti.",
+            results: "Vizitų registravimo laikas sumažėjo 40%, o pacientų įrašų tikslumas padidėjo 25%."
+        },
+        {
+            id: "trt",
+            title: "TRT Baltic",
+            description: "Specializuota platforma testosterono pakaitinei terapijai su pažangiomis formomis ir vizualine kalba, skirta vyrams.",
+            image: "/project_thumbnails/trt_thumb.png",
+            brief: "Sukurti saugią platformą TRT pacientams ir sveikatos priežiūros specialistams gydymo planams valdyti ir pažangai stebėti.",
+            design: "Profesionali medicininė sąsaja su aiškia duomenų vizualizacija ir saugiais komunikacijos kanalais. Akcentas – privatumui ir tikslumui.",
+            challenges: "Griežti duomenų saugumo reikalavimai ir sudėtingas gydymo protokolų valdymas.",
+            thoughts: "Medicininės programos reikalauja išskirtinio dėmesio detalėms ir naudotojo patirčiai, nes klaidos gali turėti rimtų pasekmių.",
+            results: "Pagerėjo gydymo laikymasis 35% ir sustiprėjo pacientų bei specialistų komunikacija."
+        },
+        {
+            id: "Portfolio",
+            title: "Asmeninis portfolio",
+            description: "Modernus, interaktyvus portfolio, pristatantis dizaino ir programavimo darbus su sklandiomis animacijomis ir įtraukiančia patirtimi.",
+            image: "/project_thumbnails/portfolio_thumb.png",
+            brief: "Sukurti išskirtinį portfolio, parodantį tiek dizaino įgūdžius, tiek technines galimybes, užtikrinant malonią naudotojo patirtį.",
+            design: "Minimalistinė kryptis su ryškia tipografija ir sklandiomis animacijomis. Dėmesys darbų pateikimui neperkraunant naudotojo.",
+            challenges: "Pusiausvyra tarp vizualaus patrauklumo ir našumo, užtikrinant sudėtingų animacijų suderinamumą tarp naršyklių.",
+            thoughts: "Portfolio turėtų atspindėti kūrėjo stilių, išliekant prieinamas ir funkcionalus visiems naudotojams.",
+            results: "Padidėjo įsitraukimo laikas 60% ir gauta daug teigiamų atsiliepimų apie UX ir vizualiką."
+        },
+        {
+            id: "Ecommerce",
+            title: "Layers.lt",
+            description: "Pilnai funkcinė el. prekybos platforma su pažangiu produktų filtravimu, saugiais mokėjimais ir aiškia informacijos pateiktimi.",
+            image: "/project_thumbnails/layers_thumb.png",
+            brief: "Sukurti mastelį atlaikančią e. prekybos sistemą su moderniais UX sprendimais ir patikimu backend funkcionalumu.",
+            design: "Naudotojui palanki sąsaja su aiškiu produktų pateikimu ir supaprastintu apmokėjimu. Pirmiausia – mobiliesiems.",
+            challenges: "Sudėtingas produktų katalogo valdymas ir sklandžių mokėjimų užtikrinimas su keliais metodais.",
+            thoughts: "E. prekybos sėkmė labai priklauso nuo trinties mažinimo pirkimo procese, kartu užtikrinant saugumą.",
+            results: "Konversijos rodiklis padidėjo 28%, o krepšelio apleidimas sumažėjo 45%."
+        },
+        {
+            id: "vlkk",
+            title: "VL Kineziterapijos Klinika",
+            description: "Šeimos vedamos kineziterapijos klinikos puslapis, atspindintis profesionalumą ir atsakingą požiūrį į žmogaus kūną ir klientus.",
+            image: "/project_thumbnails/vlk_thumb.png",
+            brief: "Sukurti intuityvią analitinę aplinką, paverčiančią sudėtingus duomenis veiksmais pagrįstomis įžvalgomis.",
+            design: "Į duomenis orientuota sąsaja su aiškia vizualine hierarchija ir interaktyviomis diagramomis. Tamsi tema ilgesniam darbui.",
+            challenges: "Didelių duomenų rinkinių aiškus pateikimas neapkraunant naudotojų ir realaus laiko tikslumo užtikrinimas.",
+            thoughts: "Veiksminga duomenų vizualizacija reikalauja suprasti tiek techninius aspektus, tiek žmogaus suvokimą.",
+            results: "Laikas iki įžvalgų sumažėjo 50%, pagerėjo sprendimų priėmimas."
+        }
+    ],
+    artPage: {
+        info: "Informacija",
+        close: "Uždaryti",
+        details: "Daugiau apie kūrinį"
+    }
+};
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
+}
+}}),
+"[project]/src/i18n/dictionaries/index.ts [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { k: __turbopack_refresh__, m: module } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "dictionaries": ()=>dictionaries
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$i18n$2f$dictionaries$2f$en$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/i18n/dictionaries/en.ts [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$i18n$2f$dictionaries$2f$lt$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/i18n/dictionaries/lt.ts [app-client] (ecmascript)");
+;
+;
+const dictionaries = {
+    en: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$i18n$2f$dictionaries$2f$en$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["en"],
+    lt: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$i18n$2f$dictionaries$2f$lt$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["lt"]
+};
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
+}
+}}),
+"[project]/src/i18n/I18nProvider.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { k: __turbopack_refresh__, m: module } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "I18nProvider": ()=>I18nProvider,
+    "useI18n": ()=>useI18n
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$i18n$2f$dictionaries$2f$index$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/i18n/dictionaries/index.ts [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature(), _s1 = __turbopack_context__.k.signature();
+"use client";
+;
+;
+const I18nContext = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createContext"])(null);
+function I18nProvider(param) {
+    let { locale, children } = param;
+    _s();
+    const value = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMemo"])({
+        "I18nProvider.useMemo[value]": ()=>{
+            return {
+                locale,
+                t: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$i18n$2f$dictionaries$2f$index$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["dictionaries"][locale]
+            };
+        }
+    }["I18nProvider.useMemo[value]"], [
+        locale
+    ]);
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(I18nContext.Provider, {
+        value: value,
+        children: children
+    }, void 0, false, {
+        fileName: "[project]/src/i18n/I18nProvider.tsx",
+        lineNumber: 29,
+        columnNumber: 10
+    }, this);
+}
+_s(I18nProvider, "tPauEVZ6EeuERV9ttvKTwQ7++Gw=");
+_c = I18nProvider;
+function useI18n() {
+    _s1();
+    const ctx = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useContext"])(I18nContext);
+    if (!ctx) {
+        throw new Error("useI18n must be used within I18nProvider");
+    }
+    return ctx;
+}
+_s1(useI18n, "/dMy7t63NXD4eYACoT93CePwGrg=");
+var _c;
+__turbopack_context__.k.register(_c, "I18nProvider");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
+}
+}}),
+"[project]/src/lib/i18n.ts [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { k: __turbopack_refresh__, m: module } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "getLocaleFromPath": ()=>getLocaleFromPath,
+    "supportedLocales": ()=>supportedLocales,
+    "switchLocaleInPath": ()=>switchLocaleInPath
+});
+const supportedLocales = [
+    "en",
+    "lt"
+];
+function getLocaleFromPath(pathname) {
+    const segment = pathname.split("/")[1];
+    return supportedLocales.includes(segment) ? segment : "en";
+}
+function switchLocaleInPath(pathname, nextLocale) {
+    const url = new URL(pathname, "https://dummy.local");
+    const hash = url.hash;
+    const segments = url.pathname.split("/");
+    if (supportedLocales.includes(segments[1])) {
+        segments[1] = nextLocale;
+    } else {
+        segments.splice(1, 0, nextLocale);
+    }
+    const newPath = segments.join("/") || "/";
+    return "".concat(newPath).concat(hash !== null && hash !== void 0 ? hash : "");
+}
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
+}
+}}),
+"[project]/src/app/components/floating-nav.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { k: __turbopack_refresh__, m: module } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "default": ()=>FloatingNav
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$floating$2d$nav$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/src/app/components/floating-nav.module.css [app-client] (css module)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$i18n$2f$I18nProvider$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/i18n/I18nProvider.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$i18n$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/i18n.ts [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
+"use client";
+;
+;
+;
+;
+;
+;
+function FloatingNav() {
+    _s();
+    const [currentHash, setCurrentHash] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
+    const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["usePathname"])();
+    const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
+    const { t, locale } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$i18n$2f$I18nProvider$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useI18n"])();
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "FloatingNav.useEffect": ()=>{
+            setCurrentHash(window.location.hash);
+            const handleHashChange = {
+                "FloatingNav.useEffect.handleHashChange": ()=>{
+                    setCurrentHash(window.location.hash);
+                }
+            }["FloatingNav.useEffect.handleHashChange"];
+            window.addEventListener("hashchange", handleHashChange);
+            return ({
+                "FloatingNav.useEffect": ()=>window.removeEventListener("hashchange", handleHashChange)
+            })["FloatingNav.useEffect"];
+        }
+    }["FloatingNav.useEffect"], []);
+    const base = "/".concat(locale);
+    const navItems = [
+        {
+            href: base,
+            label: t.nav.home,
+            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$floating$2d$nav$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].home_icon_container,
+                width: "24",
+                height: "24",
+                viewBox: "0 0 119 119",
+                fill: "none",
+                xmlns: "http://www.w3.org/2000/svg",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
+                    id: "House_icon",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                            id: "House",
+                            width: "119",
+                            height: "119",
+                            rx: "10",
+                            fill: "black"
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/components/floating-nav.tsx",
+                            lineNumber: 43,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$floating$2d$nav$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].door,
+                            id: "Door",
+                            x: "76",
+                            y: "75",
+                            width: "26",
+                            height: "41",
+                            rx: "5",
+                            fill: "white"
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/components/floating-nav.tsx",
+                            lineNumber: 44,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
+                            id: "Windows",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$floating$2d$nav$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].window4,
+                                    id: "window4",
+                                    x: "13",
+                                    y: "20",
+                                    width: "21",
+                                    height: "20",
+                                    rx: "5",
+                                    fill: "white"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/components/floating-nav.tsx",
+                                    lineNumber: 55,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$floating$2d$nav$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].window3,
+                                    id: "window3",
+                                    x: "39",
+                                    y: "20",
+                                    width: "21",
+                                    height: "20",
+                                    rx: "5",
+                                    fill: "white"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/components/floating-nav.tsx",
+                                    lineNumber: 65,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$floating$2d$nav$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].window2,
+                                    id: "window2",
+                                    x: "39",
+                                    y: "45",
+                                    width: "21",
+                                    height: "20",
+                                    rx: "5",
+                                    fill: "white"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/components/floating-nav.tsx",
+                                    lineNumber: 75,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$floating$2d$nav$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].window1,
+                                    id: "window1",
+                                    x: "13",
+                                    y: "45",
+                                    width: "21",
+                                    height: "20",
+                                    rx: "5",
+                                    fill: "white"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/components/floating-nav.tsx",
+                                    lineNumber: 85,
+                                    columnNumber: 15
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/app/components/floating-nav.tsx",
+                            lineNumber: 54,
+                            columnNumber: 13
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/app/components/floating-nav.tsx",
+                    lineNumber: 42,
+                    columnNumber: 11
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/app/components/floating-nav.tsx",
+                lineNumber: 34,
+                columnNumber: 9
+            }, this)
+        },
+        {
+            href: "".concat(base, "#projects"),
+            label: t.nav.projects,
+            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$floating$2d$nav$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].projects_icon_container,
+                width: "24",
+                height: "24",
+                viewBox: "0 0 123 112",
+                fill: "none",
+                xmlns: "http://www.w3.org/2000/svg",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
+                    id: "Projects_icon",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                            id: "Rectangle4",
+                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$floating$2d$nav$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].rectangle4,
+                            width: "57",
+                            height: "31",
+                            rx: "10",
+                            fill: "black"
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/components/floating-nav.tsx",
+                            lineNumber: 113,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$floating$2d$nav$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].rectangle3,
+                            id: "Rectangle3",
+                            y: "38",
+                            width: "57",
+                            height: "74",
+                            rx: "10",
+                            fill: "black"
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/components/floating-nav.tsx",
+                            lineNumber: 121,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$floating$2d$nav$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].rectangle2,
+                            id: "Rectangle2",
+                            x: "66",
+                            width: "57",
+                            height: "74",
+                            rx: "10",
+                            fill: "black"
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/components/floating-nav.tsx",
+                            lineNumber: 130,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$floating$2d$nav$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].rectangle1,
+                            id: "Rectangle1",
+                            x: "66",
+                            y: "82",
+                            width: "57",
+                            height: "30",
+                            rx: "10",
+                            fill: "black"
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/components/floating-nav.tsx",
+                            lineNumber: 139,
+                            columnNumber: 13
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/app/components/floating-nav.tsx",
+                    lineNumber: 112,
+                    columnNumber: 11
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/app/components/floating-nav.tsx",
+                lineNumber: 104,
+                columnNumber: 9
+            }, this)
+        },
+        {
+            href: "".concat(base, "#contact"),
+            label: t.nav.contact,
+            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$floating$2d$nav$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].contact_icon_container,
+                viewBox: "0 0 98 73",
+                xmlns: "http://www.w3.org/2000/svg",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
+                    id: "contact-icon",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$floating$2d$nav$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].bottomTriangle,
+                            id: "BottomTriangle",
+                            d: "M64.351 37.1172L48.6644 49.8311L32.9778 37.1172L0.0878906 73.0001H97.2409L64.351 37.1172Z",
+                            fill: "black"
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/components/floating-nav.tsx",
+                            lineNumber: 163,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$floating$2d$nav$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].leftTriangle,
+                            d: "M26.6648 32.0042L0 10.3926V61.0901L26.6648 32.0042Z",
+                            fill: "black"
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/components/floating-nav.tsx",
+                            lineNumber: 169,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$floating$2d$nav$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].rightTriangle,
+                            id: "Righttriangle",
+                            d: "M70.6699 32.0042L97.3347 61.0901V10.3926L70.6699 32.0042Z",
+                            fill: "black"
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/components/floating-nav.tsx",
+                            lineNumber: 174,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$floating$2d$nav$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].upperTriangle,
+                            id: "Uppertriangle",
+                            d: "M48.6674 39.3909L0.0625 0H97.2764L48.6674 39.3909Z",
+                            fill: "black"
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/components/floating-nav.tsx",
+                            lineNumber: 180,
+                            columnNumber: 13
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/app/components/floating-nav.tsx",
+                    lineNumber: 162,
+                    columnNumber: 11
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/app/components/floating-nav.tsx",
+                lineNumber: 157,
+                columnNumber: 9
+            }, this)
+        }
+    ];
+    const handleNavClick = (href, e)=>{
+        // If navigating to a hash on the home page from elsewhere, allow default.
+        // If already on home and clicking a hash, smooth-scroll.
+        if (href.startsWith("".concat(base, "#")) && pathname === base) {
+            e.preventDefault();
+            const id = href.split("#")[1];
+            const el = document.getElementById(id);
+            if (el) el.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+            setCurrentHash("#".concat(id));
+            return;
+        }
+        // If on home and clicking Home, clear hash and scroll to top
+        if (href === base && pathname === base) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+            // remove hash from URL without navigation
+            if (window.location.hash) {
+                const url = new URL(window.location.href);
+                url.hash = "";
+                window.history.replaceState({}, "", url.pathname + url.search);
+            }
+            setCurrentHash("");
+            return;
+        }
+    };
+    const isActive = (href)=>{
+        if (href === base) {
+            return pathname === base && currentHash === "";
+        }
+        if (href.startsWith("".concat(base, "#"))) {
+            return pathname === base && currentHash === "#".concat(href.split("#")[1]);
+        }
+        return pathname === href;
+    };
+    // no dropdown menu; simple links only
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
+        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$floating$2d$nav$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].floatingNav,
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$floating$2d$nav$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].navContainer,
+            children: [
+                navItems.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        href: item.href,
+                        className: "".concat(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$floating$2d$nav$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].navItem, " ").concat(isActive(item.href) ? __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$floating$2d$nav$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].active : ""),
+                        onClick: (e)=>handleNavClick(item.href, e),
+                        children: [
+                            item.icon,
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$floating$2d$nav$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].label,
+                                children: item.label
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/components/floating-nav.tsx",
+                                lineNumber: 245,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, item.href, true, {
+                        fileName: "[project]/src/app/components/floating-nav.tsx",
+                        lineNumber: 236,
+                        columnNumber: 11
+                    }, this)),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                    className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$floating$2d$nav$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].navItem,
+                    "aria-label": t.nav.langToggleAria,
+                    onClick: ()=>{
+                        const nextLocale = locale === "en" ? "lt" : "en";
+                        const nextPath = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$i18n$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["switchLocaleInPath"])(pathname + (currentHash || ""), nextLocale);
+                        router.push(nextPath);
+                    },
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$floating$2d$nav$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].langLabel,
+                        children: t.nav.langShort
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/components/floating-nav.tsx",
+                        lineNumber: 260,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/src/app/components/floating-nav.tsx",
+                    lineNumber: 248,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/app/components/floating-nav.tsx",
+            lineNumber: 233,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/src/app/components/floating-nav.tsx",
+        lineNumber: 232,
+        columnNumber: 5
+    }, this);
+}
+_s(FloatingNav, "eWf7hTa6cHyWTgx0E+TpxnwyANI=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["usePathname"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$i18n$2f$I18nProvider$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useI18n"]
+    ];
+});
+_c = FloatingNav;
+var _c;
+__turbopack_context__.k.register(_c, "FloatingNav");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
+}
+}}),
+"[project]/src/app/components/client-layout.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
+"use strict";
+
+var { k: __turbopack_refresh__, m: module } = __turbopack_context__;
+{
+__turbopack_context__.s({
+    "default": ()=>ClientLayout
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/components/AnimatePresence/index.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
+"use client";
+;
+;
+;
+function ClientLayout(param) {
+    let { children } = param;
+    _s();
+    const pathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["usePathname"])();
+    const [shouldAnimate, setShouldAnimate] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const previousPathname = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(pathname);
+    const isInitialMount = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(true);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "ClientLayout.useEffect": ()=>{
+            // Skip animation on initial mount
+            if (isInitialMount.current) {
+                isInitialMount.current = false;
+                return;
+            }
+            // Only animate if we're actually navigating to a different page
+            if (previousPathname.current !== pathname) {
+                setShouldAnimate(true);
+                previousPathname.current = pathname;
+            }
+        }
+    }["ClientLayout.useEffect"], [
+        pathname
+    ]);
+    // Reset animation flag after transition
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "ClientLayout.useEffect": ()=>{
+            if (shouldAnimate) {
+                const timer = setTimeout({
+                    "ClientLayout.useEffect.timer": ()=>{
+                        setShouldAnimate(false);
+                    }
+                }["ClientLayout.useEffect.timer"], 600); // Match transition duration
+                return ({
+                    "ClientLayout.useEffect": ()=>clearTimeout(timer)
+                })["ClientLayout.useEffect"];
+            }
+        }
+    }["ClientLayout.useEffect"], [
+        shouldAnimate
+    ]);
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        style: {
+            position: "relative",
+            width: "100%",
+            minHeight: "100vh",
+            overflow: "hidden"
+        },
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
+            mode: "wait",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                initial: shouldAnimate ? {
+                    x: "100%",
+                    opacity: 0,
+                    scale: 0.95
+                } : {
+                    x: "0%",
+                    opacity: 1,
+                    scale: 1
+                },
+                animate: {
+                    x: "0%",
+                    opacity: 1,
+                    scale: 1
+                },
+                exit: shouldAnimate ? {
+                    x: "-100%",
+                    opacity: 0,
+                    scale: 0.95
+                } : {
+                    x: "0%",
+                    opacity: 1,
+                    scale: 1
+                },
+                transition: {
+                    duration: 0.6,
+                    ease: [
+                        0.25,
+                        0.46,
+                        0.45,
+                        0.94
+                    ]
+                },
+                style: {
+                    position: "relative",
+                    width: "100%",
+                    minHeight: "100vh",
+                    transformOrigin: "center center"
+                },
+                children: children
+            }, pathname, false, {
+                fileName: "[project]/src/app/components/client-layout.tsx",
+                lineNumber: 51,
+                columnNumber: 9
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/app/components/client-layout.tsx",
+            lineNumber: 50,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "[project]/src/app/components/client-layout.tsx",
+        lineNumber: 42,
+        columnNumber: 5
+    }, this);
+}
+_s(ClientLayout, "2nMURGo3z2oM8tz8TjsgODlMgvo=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["usePathname"]
+    ];
+});
+_c = ClientLayout;
+var _c;
+__turbopack_context__.k.register(_c, "ClientLayout");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
+}
+}}),
+}]);
+
+//# sourceMappingURL=src_7e1b5c07._.js.map

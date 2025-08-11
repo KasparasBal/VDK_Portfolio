@@ -15,8 +15,8 @@ export const lt: Dictionary = {
     more: "DAUGIAU",
     projects: "PROJEKTAI",
     web: "WEB.",
-    art: "MENAS.",
-    contactTitle: "SUSISIEKIM?",
+    art: "KŪRYBA",
+    contactTitle: "LABAS?",
     links: "Nuorodos",
     information: "Informacija",
     backToTop: "ATGAL Į VIRŠŲ",
@@ -35,7 +35,7 @@ export const lt: Dictionary = {
     error: "Nepavyko išsiųsti žinutės. Bandykite dar kartą.",
   },
   overlay: {
-    caseStudy: "ATVEJO ANALIZĖ",
+    caseStudy: "PROJEKTO ANALIZĖ",
     brief: "SANTRAUKA",
     design: "DIZAINAS",
     challenges: "IŠŠŪKIAI",
@@ -44,8 +44,8 @@ export const lt: Dictionary = {
     closeAria: "Uždaryti",
   },
   footer: {
-    designWebArt: "DIZAINAS/ŽINIATINKLIS/MENAS",
-    portfolio: "PORTFOLIS",
+    designWebArt: "DIZAINAS/WEB/KŪRYBA",
+    portfolio: "PORTFOLIO",
   },
   projectsPage: {
     title: "PROJEKTAI",
@@ -87,18 +87,18 @@ export const lt: Dictionary = {
     },
     {
       id: "Portfolio",
-      title: "Asmeninis portfolis",
+      title: "Asmeninis portfolio",
       description:
-        "Modernus, interaktyvus portfolis, pristatantis dizaino ir programavimo darbus su sklandiomis animacijomis ir įtraukiančia patirtimi.",
+        "Modernus, interaktyvus portfolio, pristatantis dizaino ir programavimo darbus su sklandiomis animacijomis ir įtraukiančia patirtimi.",
       image: "/project_thumbnails/portfolio_thumb.png",
       brief:
-        "Sukurti išskirtinį portfolį, parodantį tiek dizaino įgūdžius, tiek technines galimybes, užtikrinant malonią naudotojo patirtį.",
+        "Sukurti išskirtinį portfolio, parodantį tiek dizaino įgūdžius, tiek technines galimybes, užtikrinant malonią naudotojo patirtį.",
       design:
         "Minimalistinė kryptis su ryškia tipografija ir sklandiomis animacijomis. Dėmesys darbų pateikimui neperkraunant naudotojo.",
       challenges:
         "Pusiausvyra tarp vizualaus patrauklumo ir našumo, užtikrinant sudėtingų animacijų suderinamumą tarp naršyklių.",
       thoughts:
-        "Portfolis turėtų atspindėti kūrėjo stilių, išliekant prieinamas ir funkcionalus visiems naudotojams.",
+        "Portfolio turėtų atspindėti kūrėjo stilių, išliekant prieinamas ir funkcionalus visiems naudotojams.",
       results:
         "Padidėjo įsitraukimo laikas 60% ir gauta daug teigiamų atsiliepimų apie UX ir vizualiką.",
     },
@@ -136,4 +136,13 @@ export const lt: Dictionary = {
       results: "Laikas iki įžvalgų sumažėjo 50%, pagerėjo sprendimų priėmimas.",
     },
   ],
+  artPage: {
+    info: "Informacija",
+    close: "Uždaryti",
+    details: "Daugiau apie kūrinį",
+    medium: "TECHNIKA",
+    idea: "IDĖJA",
+    meaning: "PRASMĖ",
+    inspiration: "ĮKVĖPIMAS",
+  },
 };

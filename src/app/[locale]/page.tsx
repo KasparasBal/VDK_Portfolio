@@ -14,6 +14,11 @@ import { useI18n } from "@/i18n/I18nProvider";
 export default function Home() {
   const { t, locale } = useI18n();
   const base = `/${locale}`;
+  const handleBackToTop = () => {
+    if (typeof window !== "undefined") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
   return (
     <>
       <section id="hero" className={styles.hero}>
@@ -37,7 +42,9 @@ export default function Home() {
               </div>
               <div className={styles.aspireGroup}>
                 <div className={styles.aspireText}>{t.home.aspirePrefix}</div>
-                <div className={styles.titleText}>{t.home.designer}</div>
+                <div className={styles.titleText} data-text={t.home.designer}>
+                  {t.home.designer}
+                </div>
               </div>
             </div>
             <div className={styles.aboutRowTwo}>
@@ -89,7 +96,7 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.projectRowTwo}>
-            <Link href={`${base}/projects?filter=art`}>
+            <Link href={`${base}/art`}>
               <span>{t.home.art}</span>
             </Link>
           </div>
@@ -132,7 +139,18 @@ export default function Home() {
                   <li>Trakai</li>
                 </ul>
               </div>
-              <div className={styles.contactsArrow}>
+              <div
+                className={styles.contactsArrow}
+                role="button"
+                tabIndex={0}
+                onClick={handleBackToTop}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault();
+                    handleBackToTop();
+                  }
+                }}
+              >
                 <svg className={styles.arrowSvg} viewBox="0 0 24 24">
                   <path d="M12 19V5M5 12l7-7 7 7" />
                 </svg>

@@ -1,0 +1,234 @@
+/* [project]/src/app/[locale]/art/art.module.css [app-client] (css) */
+.art-module__-JGKpG__viewportStatic {
+  background: #fff;
+  place-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  display: grid;
+  position: relative;
+  overflow: hidden;
+}
+
+.art-module__-JGKpG__masonry {
+  column-count: 4;
+  column-gap: 16px;
+  width: min(1200px, 100%);
+}
+
+@media (max-width: 1200px) {
+  .art-module__-JGKpG__masonry {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .art-module__-JGKpG__masonry {
+    column-count: 2;
+  }
+}
+
+.art-module__-JGKpG__masonryItem {
+  break-inside: avoid;
+  width: 100%;
+  margin: 0 0 16px;
+  display: inline-block;
+  position: relative;
+}
+
+.art-module__-JGKpG__imageButton {
+  cursor: zoom-in;
+  background: none;
+  border: 0;
+  width: 100%;
+  padding: 0;
+  display: block;
+}
+
+.art-module__-JGKpG__image {
+  border-radius: 12px;
+  width: 100%;
+  height: auto;
+  display: block;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, .08);
+}
+
+.art-module__-JGKpG__infoButton {
+  color: #fff;
+  cursor: pointer;
+  background: rgba(0, 0, 0, .6);
+  border: 0;
+  border-radius: 10px;
+  padding: 6px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.art-module__-JGKpG__infoButton:hover {
+  background: rgba(0, 0, 0, .7);
+}
+
+.art-module__-JGKpG__infoIcon {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+.art-module__-JGKpG__infoIcon svg {
+  fill: #fff;
+  stroke: #fff;
+}
+
+.art-module__-JGKpG__lightbox {
+  z-index: 1200;
+  opacity: 0;
+  pointer-events: none;
+  background: rgba(0, 0, 0, .7);
+  place-items: center;
+  transition: opacity .2s;
+  display: grid;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.art-module__-JGKpG__lightboxVisible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.art-module__-JGKpG__lightboxInner {
+  width: 90vw;
+  height: 80vh;
+  position: relative;
+}
+
+.art-module__-JGKpG__lightboxImage {
+  object-fit: contain;
+}
+
+.art-module__-JGKpG__lightboxClose {
+  cursor: pointer;
+  background: rgba(0, 0, 0, .6);
+  border: 0;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.art-module__-JGKpG__lightboxClose:before, .art-module__-JGKpG__lightboxClose:after {
+  content: "";
+  transform-origin: center;
+  background: #fff;
+  width: 16px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.art-module__-JGKpG__lightboxClose:before {
+  transform: translate(-50%, -50%)rotate(45deg);
+}
+
+.art-module__-JGKpG__lightboxClose:after {
+  transform: translate(-50%, -50%)rotate(-45deg);
+}
+
+.art-module__-JGKpG__infoPanel {
+  color: #000;
+  z-index: 1250;
+  background: #fff;
+  flex-direction: column;
+  width: min(420px, 95vw);
+  height: 100vh;
+  transition: transform .28s;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  box-shadow: 10px 0 30px rgba(0, 0, 0, .15);
+}
+
+.art-module__-JGKpG__infoPanelOpen {
+  transform: translateX(0);
+}
+
+.art-module__-JGKpG__infoHeader {
+  border-bottom: 1px solid rgba(0, 0, 0, .08);
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  display: flex;
+}
+
+.art-module__-JGKpG__infoTitle {
+  margin: 0;
+  font-size: 18px;
+}
+
+.art-module__-JGKpG__closeBtn {
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 8px;
+  padding: 6px 10px;
+}
+
+.art-module__-JGKpG__infoContent {
+  padding: 16px 20px;
+  overflow: auto;
+}
+
+.art-module__-JGKpG__infoThumbWrap {
+  width: 100%;
+  height: 180px;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.art-module__-JGKpG__infoThumb {
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.art-module__-JGKpG__infoText {
+  color: #000;
+}
+
+/* [project]/src/app/components/footer.module.css [app-client] (css) */
+.footer-module__4boSWa__footer {
+  background-color: #000;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  display: flex;
+}
+
+.footer-module__4boSWa__ebdText {
+  color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke: clamp(2px, .3vw, 3px) white;
+  font-size: max(4rem, min(12vw, 11.25rem));
+}
+
+.footer-module__4boSWa__footerText {
+  font-size: max(1rem, min(4vw, 2.5rem));
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .footer-module__4boSWa__footer {
+    text-align: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+/*# sourceMappingURL=src_app_e3b20557._.css.map*/

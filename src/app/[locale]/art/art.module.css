@@ -1,0 +1,245 @@
+.viewportStatic {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+  background: #fff;
+  display: grid;
+  place-items: center;
+  padding: 4rem 2rem;
+}
+
+.masonry {
+  width: min(1200px, 100%);
+  column-count: 4;
+  column-gap: 16px;
+}
+
+@media (max-width: 1200px) {
+  .masonry {
+    column-count: 3;
+  }
+}
+@media (max-width: 768px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+
+.masonryItem {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 16px;
+  break-inside: avoid;
+  transition: transform 0.3s ease;
+}
+.masonryItem:hover {
+  transform: scale(1.03);
+}
+
+.imageButton {
+  display: block;
+  width: 100%;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  cursor: zoom-in;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+.infoButton {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  border: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 6px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.infoButton:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.infoIcon {
+  width: 24px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.infoIcon svg {
+  fill: #fff;
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+.infoIcon:hover svg {
+  transform: rotate(-10deg);
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: grid;
+  place-items: center;
+  z-index: 1200;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 200ms ease;
+}
+.lightboxVisible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Backdrop for the info aside */
+.asideBackdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1200;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 200ms ease;
+}
+.asideBackdropVisible {
+  opacity: 1;
+  pointer-events: auto;
+}
+.lightboxInner {
+  position: relative;
+  width: 90vw;
+  height: 80vh;
+}
+.lightboxImage {
+  object-fit: contain;
+}
+.lightboxClose {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 0;
+  background: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+.lightboxClose::before,
+.lightboxClose::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 2px;
+  background: #fff;
+  transform-origin: center;
+}
+.lightboxClose::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.lightboxClose::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.infoPanel {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: min(420px, 95vw);
+  height: 100vh;
+  background: #fff;
+  color: #000;
+  box-shadow: 10px 0 30px rgba(0, 0, 0, 0.15);
+  z-index: 1251;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(-100%);
+  transition: transform 280ms ease;
+}
+.infoPanelOpen {
+  transform: translateX(0);
+}
+.infoHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+.infoTitle {
+  margin: 0;
+  font-size: 18px;
+}
+.closeBtn {
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.infoContent {
+  padding: 16px 20px;
+  overflow: auto;
+}
+.sections {
+  margin-top: 8px;
+}
+.section {
+  border-top: 1px solid #000;
+}
+.sectionHeader {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  cursor: pointer;
+}
+.sectionTitle {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #000;
+}
+.chevron {
+  transition: transform 200ms ease;
+  color: #000;
+}
+.expanded {
+  transform: rotate(90deg);
+}
+.sectionContent {
+  padding: 0 0 12px 0;
+  color: #000;
+}
+.infoThumbWrap {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  margin-bottom: 12px;
+}
+.infoThumb {
+  object-fit: cover;
+  border-radius: 8px;
+}
+.infoText {
+  color: #000;
+}

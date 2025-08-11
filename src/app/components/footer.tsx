@@ -1,3 +1,5 @@
+"use client";
+
 import styles from "./footer.module.css";
 import { useI18n } from "@/i18n/I18nProvider";
 

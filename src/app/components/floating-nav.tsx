@@ -3,13 +3,12 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { motion } from "framer-motion";
 import styles from "./floating-nav.module.css";
 import { useI18n } from "@/i18n/I18nProvider";
 import { switchLocaleInPath } from "@/lib/i18n";
+import { useRef } from "react";
 
 export default function FloatingNav() {
-  const [isHovered, setIsHovered] = useState(false);
   const [currentHash, setCurrentHash] = useState("");
   const pathname = usePathname();
   const router = useRouter();
@@ -202,8 +201,17 @@ export default function FloatingNav() {
       return;
     }
 
-    if (pathname === href || (pathname === base && href === base)) {
+    // If on home and clicking Home, clear hash and scroll to top
+    if (href === base && pathname === base) {
       e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      // remove hash from URL without navigation
+      if (window.location.hash) {
+        const url = new URL(window.location.href);
+        url.hash = "";
+        window.history.replaceState({}, "", url.pathname + url.search);
+      }
+      setCurrentHash("");
       return;
     }
   };
@@ -217,6 +225,8 @@ export default function FloatingNav() {
     }
     return pathname === href;
   };
+
+  // no dropdown menu; simple links only
 
   return (
     <nav className={styles.floatingNav}>
@@ -232,7 +242,6 @@ export default function FloatingNav() {
             onClick={(e) => handleNavClick(item.href, e)}
           >
             {item.icon}
-
             <span className={styles.label}>{item.label}</span>
           </Link>
         ))}
@@ -248,9 +257,10 @@ export default function FloatingNav() {
             router.push(nextPath);
           }}
         >
-          <span className={styles.label}>{t.nav.langShort}</span>
+          <span className={styles.langLabel}>{t.nav.langShort}</span>
         </button>
       </div>
+      {/* no dropdown */}
     </nav>
   );
 }
