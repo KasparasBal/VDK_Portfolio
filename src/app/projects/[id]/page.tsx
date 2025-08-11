@@ -2,8 +2,9 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import styles from "./project.module.css";
 import Footer from "../../components/footer";
+import { useI18n } from "@/i18n/I18nProvider";
 
-// Sample project data - replace with your actual data source
+// Sample project data - replaced by dictionary-driven data when used via overlay
 const projectsData = {
   1: {
     title: "Brand Identity Design",
@@ -68,6 +69,7 @@ const projectsData = {
 };
 // @ts-expect-error fornow
 export default function ProjectDetail({ params }) {
+  const { t } = useI18n();
   const projectId = parseInt(params.id);
   // @ts-expect-error fornow
   const project = projectsData[projectId];
@@ -88,7 +90,7 @@ export default function ProjectDetail({ params }) {
 
           <div className={styles.projectHeader}>
             <h1 className={styles.projectTitle}>PROJECT</h1>
-            <span className={styles.caseStudy}>CASE STUDY</span>
+            <span className={styles.caseStudy}>{t.overlay.caseStudy}</span>
           </div>
 
           <div className={styles.heroContent}>

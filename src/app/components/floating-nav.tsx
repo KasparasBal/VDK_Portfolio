@@ -2,15 +2,18 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { motion } from "framer-motion";
-import SvgIcon from "./svg-icon";
 import styles from "./floating-nav.module.css";
+import { useI18n } from "@/i18n/I18nProvider";
+import { switchLocaleInPath } from "@/lib/i18n";
 
 export default function FloatingNav() {
   const [isHovered, setIsHovered] = useState(false);
   const [currentHash, setCurrentHash] = useState("");
   const pathname = usePathname();
+  const router = useRouter();
+  const { t, locale } = useI18n();
 
   useEffect(() => {
     setCurrentHash(window.location.hash);
@@ -23,10 +26,11 @@ export default function FloatingNav() {
     return () => window.removeEventListener("hashchange", handleHashChange);
   }, []);
 
+  const base = `/${locale}`;
   const navItems = [
     {
-      href: "/",
-      label: "Home",
+      href: base,
+      label: t.nav.home,
       icon: (
         <svg
           className={styles.home_icon_container}
@@ -95,8 +99,8 @@ export default function FloatingNav() {
       ),
     },
     {
-      href: "/#projects",
-      label: "Projects",
+      href: `${base}#projects`,
+      label: t.nav.projects,
       icon: (
         <svg
           className={styles.projects_icon_container}
@@ -148,8 +152,8 @@ export default function FloatingNav() {
       ),
     },
     {
-      href: "/#contact",
-      label: "Contact",
+      href: `${base}#contact`,
+      label: t.nav.contact,
       icon: (
         <svg
           className={styles.contact_icon_container}
@@ -189,7 +193,7 @@ export default function FloatingNav() {
   const handleNavClick = (href: string, e: React.MouseEvent) => {
     // If navigating to a hash on the home page from elsewhere, allow default.
     // If already on home and clicking a hash, smooth-scroll.
-    if (href.startsWith("/#") && pathname === "/") {
+    if (href.startsWith(`${base}#`) && pathname === base) {
       e.preventDefault();
       const id = href.split("#")[1];
       const el = document.getElementById(id);
@@ -198,18 +202,18 @@ export default function FloatingNav() {
       return;
     }
 
-    if (pathname === href || (pathname === "/" && href === "/")) {
+    if (pathname === href || (pathname === base && href === base)) {
       e.preventDefault();
       return;
     }
   };
 
   const isActive = (href: string) => {
-    if (href === "/") {
-      return pathname === "/" && currentHash === "";
+    if (href === base) {
+      return pathname === base && currentHash === "";
     }
-    if (href.startsWith("/#")) {
-      return pathname === "/" && currentHash === href.replace("/", "");
+    if (href.startsWith(`${base}#`)) {
+      return pathname === base && currentHash === `#${href.split("#")[1]}`;
     }
     return pathname === href;
   };
@@ -232,6 +236,20 @@ export default function FloatingNav() {
             <span className={styles.label}>{item.label}</span>
           </Link>
         ))}
+        <button
+          className={styles.navItem}
+          aria-label={t.nav.langToggleAria}
+          onClick={() => {
+            const nextLocale = locale === "en" ? "lt" : "en";
+            const nextPath = switchLocaleInPath(
+              pathname + (currentHash || ""),
+              nextLocale
+            );
+            router.push(nextPath);
+          }}
+        >
+          <span className={styles.label}>{t.nav.langShort}</span>
+        </button>
       </div>
     </nav>
   );

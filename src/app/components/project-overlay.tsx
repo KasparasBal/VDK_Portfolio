@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import styles from "./project-overlay.module.css";
+import { useI18n } from "@/i18n/I18nProvider";
 
 interface ProjectOverlayProps {
   isOpen: boolean;
@@ -25,6 +26,7 @@ export default function ProjectOverlay({
   onClose,
   project,
 }: ProjectOverlayProps) {
+  const { t } = useI18n();
   const [expandedSections, setExpandedSections] = useState<string[]>([]);
   const modalRef = useRef<HTMLDivElement | null>(null);
   const sectionRefs = useRef<Record<string, HTMLDivElement | null>>({});
@@ -96,7 +98,7 @@ export default function ProjectOverlay({
           <button
             className={styles.backButton}
             onClick={onClose}
-            aria-label="Close"
+            aria-label={t.overlay.closeAria}
           >
             <svg
               viewBox="0 0 24 24"
@@ -109,7 +111,7 @@ export default function ProjectOverlay({
           </button>
           <div className={styles.titleSection}>
             <h1 className={styles.projectTitle}>{project.title}</h1>
-            <h2 className={styles.caseStudyTitle}>CASE STUDY</h2>
+            <h2 className={styles.caseStudyTitle}>{t.overlay.caseStudy}</h2>
           </div>
         </div>
 
@@ -134,15 +136,27 @@ export default function ProjectOverlay({
           {/* Expandable Sections */}
           <div className={styles.sections}>
             {[
-              { key: "brief", title: "BRIEF", content: project.brief },
-              { key: "design", title: "DESIGN", content: project.design },
+              { key: "brief", title: t.overlay.brief, content: project.brief },
+              {
+                key: "design",
+                title: t.overlay.design,
+                content: project.design,
+              },
               {
                 key: "challenges",
-                title: "CHALLENGES",
+                title: t.overlay.challenges,
                 content: project.challenges,
               },
-              { key: "thoughts", title: "THOUGHTS", content: project.thoughts },
-              { key: "results", title: "RESULTS", content: project.results },
+              {
+                key: "thoughts",
+                title: t.overlay.thoughts,
+                content: project.thoughts,
+              },
+              {
+                key: "results",
+                title: t.overlay.results,
+                content: project.results,
+              },
             ].map(({ key, title, content }) => (
               <div
                 key={key}

@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
+import FloatingNav from "../components/floating-nav";
+import ClientLayout from "../components/client-layout";
+import type { Locale } from "@/lib/i18n";
+import { I18nProvider } from "@/i18n/I18nProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,15 +28,21 @@ export const viewport = {
   themeColor: "#000000",
 };
 
-export default function RootLayout({
+export default function LocaleLayout({
   children,
+  params,
 }: Readonly<{
   children: React.ReactNode;
+  params: { locale: Locale };
 }>) {
+  const { locale } = params;
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+        <I18nProvider locale={locale}>
+          <ClientLayout>{children}</ClientLayout>
+          <FloatingNav />
+        </I18nProvider>
       </body>
     </html>
   );

@@ -2,8 +2,10 @@
 
 import { useState } from "react";
 import styles from "./contact-form.module.css";
+import { useI18n } from "@/i18n/I18nProvider";
 
 export default function ContactForm() {
+  const { t } = useI18n();
   const [formData, setFormData] = useState({
     name: "",
     subject: "",
@@ -65,7 +67,7 @@ export default function ContactForm() {
   return (
     <form onSubmit={handleSubmit} className={styles.contactForm}>
       <div className={styles.formField}>
-        <label htmlFor="name">Name</label>
+        <label htmlFor="name">{t.form.name}</label>
         <input
           id="name"
           name="name"
@@ -76,7 +78,7 @@ export default function ContactForm() {
         />
       </div>
       <div className={styles.formField}>
-        <label htmlFor="subject">Subject</label>
+        <label htmlFor="subject">{t.form.subject}</label>
         <input
           id="subject"
           name="subject"
@@ -87,7 +89,7 @@ export default function ContactForm() {
         />
       </div>
       <div className={styles.formField}>
-        <label htmlFor="message">Your Message</label>
+        <label htmlFor="message">{t.form.message}</label>
         <textarea
           id="message"
           name="message"
@@ -104,17 +106,17 @@ export default function ContactForm() {
           disabled={isSubmitting}
           aria-busy={isSubmitting}
         >
-          {isSubmitting ? "Sending…" : "Send"}
+          {isSubmitting ? t.form.sending : t.form.send}
         </button>
       </div>
 
       {submitStatus === "success" && (
-        <div className={styles.successMessage}>Message sent successfully!</div>
+        <div className={styles.successMessage}>{t.form.success}</div>
       )}
 
       {submitStatus === "error" && (
         <div className={styles.errorMessage}>
-          {errorMessage || "Failed to send message. Please try again."}
+          {errorMessage || t.form.error}
         </div>
       )}
     </form>

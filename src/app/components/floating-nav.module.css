@@ -87,6 +87,17 @@
   white-space: nowrap;
 }
 
+/* Button reset for language switcher to match nav links */
+button.navItem {
+  border: none;
+  background: transparent;
+}
+button.navItem:hover {
+  background: rgba(0, 0, 0, 0.05);
+  color: #000;
+  transform: translateY(-1px);
+}
+
 /* Mobile responsive */
 @media (max-width: 768px) {
   .floatingNav {
