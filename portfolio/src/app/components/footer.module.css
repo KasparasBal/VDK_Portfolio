@@ -3,6 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: black;
 }
 .ebdText {
   font-size: clamp(4rem, 12vw, 11.25rem);

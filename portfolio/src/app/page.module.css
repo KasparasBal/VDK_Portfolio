@@ -481,6 +481,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 200px;
   align-items: start;
 }
 
@@ -560,7 +564,11 @@
   gap: 3rem;
   height: 100%;
 }
-
+.contactsContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 .contactsLinks h3,
 .contactsInformation h3 {
   font-size: 20px;
@@ -612,8 +620,8 @@
 }
 
 .arrowSvg {
-  width: 60px;
-  height: 60px;
+  width: 200px;
+  height: 200px;
   stroke: black;
   stroke-width: 3;
   fill: none;
@@ -625,7 +633,7 @@
 }
 
 .contactsArrow span {
-  font-size: 18px;
+  font-size: 58px;
   font-weight: 700;
   text-align: center;
   transition: transform 0.3s ease;
@@ -643,6 +651,7 @@
   .contactsRowTwo {
     grid-template-columns: 1fr;
     gap: 2rem;
+    justify-content: space-between;
   }
 
   .contactsRowOne {
@@ -838,6 +847,13 @@
     width: 100%;
     height: auto;
   }
+  .aboutText {
+    display: none;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
 
   .projects {
     padding: 1rem;
@@ -856,4 +872,17 @@
     width: 48px;
     height: 48px;
   }
+  .contacts {
+    margin: 50px 0;
+  }
+  .contactsRowTwo {
+    display: flex;
+    flex-direction: column;
+  }
+  .contactsArrow span {
+    font-size: 30;
+  }
+}
+body {
+  background-color: white;
 }

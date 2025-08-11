@@ -13,6 +13,7 @@ export default function ContactForm() {
   const [submitStatus, setSubmitStatus] = useState<
     "idle" | "success" | "error"
   >("idle");
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -28,6 +29,7 @@ export default function ContactForm() {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus("idle");
+    setErrorMessage(null);
 
     try {
       const response = await fetch("/api/contact", {
@@ -46,9 +48,14 @@ export default function ContactForm() {
         setSubmitStatus("success");
         setFormData({ name: "", subject: "", message: "" });
       } else {
+        const data = (await response.json().catch(() => null)) as {
+          error?: string;
+        } | null;
+        setErrorMessage(data?.error || "Failed to send message");
         setSubmitStatus("error");
       }
     } catch (error) {
+      setErrorMessage(error instanceof Error ? error.message : "Network error");
       setSubmitStatus("error");
     } finally {
       setIsSubmitting(false);
@@ -90,13 +97,24 @@ export default function ContactForm() {
         />
       </div>
 
+      <div className={styles.actionsRow}>
+        <button
+          type="submit"
+          className={styles.submitButton}
+          disabled={isSubmitting}
+          aria-busy={isSubmitting}
+        >
+          {isSubmitting ? "Sending…" : "Send"}
+        </button>
+      </div>
+
       {submitStatus === "success" && (
         <div className={styles.successMessage}>Message sent successfully!</div>
       )}
 
       {submitStatus === "error" && (
         <div className={styles.errorMessage}>
-          Failed to send message. Please try again.
+          {errorMessage || "Failed to send message. Please try again."}
         </div>
       )}
     </form>

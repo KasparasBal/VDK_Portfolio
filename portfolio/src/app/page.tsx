@@ -101,7 +101,7 @@ export default function Home() {
       </section>
       {/* -------------------CONTACT SECTION------------------- */}
       <section id="contact" className={styles.contacts}>
-        <div className={styles.container}>
+        <div className={styles.contactsContainer}>
           <div className={styles.contactsRowOne}>TALK?</div>
           <div className={styles.contactsRowTwo}>
             <div className={styles.contactsInnerColumnOne}>
