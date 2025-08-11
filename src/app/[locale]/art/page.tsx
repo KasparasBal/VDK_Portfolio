@@ -1,6 +1,5 @@
-import path from "path";
-import { promises as fs } from "fs";
-// Avoid importing caching helpers that can pull in server runtime overhead
+// Static import of generated manifest for fully static rendering
+import artManifest from "@/data/art-manifest";
 import Footer from "../../components/footer";
 import Gallery from "./Gallery";
 
@@ -12,24 +11,10 @@ type ManifestItem = {
   blur: string;
 };
 
-function parseNumericId(filename: string): number {
-  const match = filename.match(/art_(\d+)/i);
-  return match ? Number(match[1]) : Number.POSITIVE_INFINITY;
-}
+// no-op: numeric id parsing is not needed once manifest is static-imported
 
-export default async function ArtPage() {
-  const artworkDir = path.join(process.cwd(), "public", "artwork");
-
-  let manifest: ManifestItem[] | null = null;
-  try {
-    const raw = await fs.readFile(
-      path.join(artworkDir, "manifest.json"),
-      "utf8"
-    );
-    manifest = JSON.parse(raw) as ManifestItem[];
-  } catch {
-    manifest = null;
-  }
+export default function ArtPage() {
+  const manifest = (artManifest as unknown as ManifestItem[]) ?? [];
 
   let items: {
     id: number;
@@ -47,7 +32,6 @@ export default async function ArtPage() {
       }))
       .sort((a, b) => a.id - b.id);
   } else {
-    // If no manifest, do not attempt to scan the directory in production – keeps bundle lean
     items = [];
   }
 
@@ -59,5 +43,4 @@ export default async function ArtPage() {
   );
 }
 
-export const revalidate = 3600;
 export const dynamic = "force-static";
