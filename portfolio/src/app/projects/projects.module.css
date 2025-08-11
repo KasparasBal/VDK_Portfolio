@@ -30,7 +30,7 @@
 }
 
 .projectsTitle {
-  font-size: 5em;
+  font-size: clamp(2.5rem, 8vw, 5rem);
   font-weight: 900;
   color: black;
   margin: 0;
@@ -83,23 +83,25 @@
 }
 
 .number {
-  font-size: 2.5rem;
+  font-size: clamp(1.25rem, 5vw, 2.5rem);
   font-weight: 900;
   color: black;
   transition: all 0.3s ease;
 }
 
 .activeNumber .number {
-  font-size: 4rem;
+  font-size: clamp(2rem, 8vw, 4rem);
   font-weight: 900;
   color: black;
   transform: scale(1.2);
+  border-bottom: 3px solid black;
+  padding-bottom: 4px;
 }
 
 /* 3D Carousel Styles - perfectly centered */
 .carouselContainer {
   position: relative;
-  height: 70vh;
+  height: min(70vh, 640px);
   width: 100%;
   max-width: 900px;
   display: flex;
@@ -176,6 +178,8 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top;
+
   transition: transform 0.3s ease;
 }
 
@@ -214,6 +218,8 @@
   padding: 1.5rem;
   background-color: white;
   color: black;
+  border-top: 1px solid black;
+  height: 100%;
 }
 
 .projectTitle {
@@ -224,7 +230,7 @@
 }
 
 .projectDescription {
-  font-size: 1.1rem;
+  font-size: 0.6rem;
   color: #666;
   margin: 0;
   line-height: 1.4;
@@ -238,19 +244,50 @@
   }
 
   .projectThumbnail {
-    width: 350px;
-    height: 250px;
+    width: 340px;
+    height: 240px;
   }
 }
 
 @media (max-width: 480px) {
+  .contentSection {
+    padding-bottom: 160px; /* space for floating nav */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .carouselContainer {
+    height: 60vh;
+    order: 1;
+  }
+
   .carouselItem {
-    margin-left: -140px; /* Half the width of the small mobile card */
+    margin-left: -142.5px; /* Half the width of the small mobile card */
     margin-top: -100px; /* Half the height of the small mobile card */
   }
 
   .projectThumbnail {
-    width: 280px;
+    width: 285px; /* ~5% smaller */
     height: 200px;
+  }
+
+  .projectNumbers {
+    position: static;
+    transform: none;
+    bottom: auto;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.25rem;
+    width: 100%;
+    order: 2;
+  }
+  .projectNumbers::before {
+    display: none;
+  }
+
+  .numberItem {
+    padding-right: 0;
   }
 }

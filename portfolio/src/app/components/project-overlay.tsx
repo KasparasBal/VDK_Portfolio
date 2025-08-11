@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import styles from "./project-overlay.module.css";
 
@@ -26,6 +26,8 @@ export default function ProjectOverlay({
   project,
 }: ProjectOverlayProps) {
   const [expandedSections, setExpandedSections] = useState<string[]>([]);
+  const modalRef = useRef<HTMLDivElement | null>(null);
+  const sectionRefs = useRef<Record<string, HTMLDivElement | null>>({});
 
   // Prevent body and html scroll when overlay is open
   useEffect(() => {
@@ -60,21 +62,42 @@ export default function ProjectOverlay({
   }, [isOpen]);
 
   const toggleSection = (section: string) => {
-    setExpandedSections((prev) =>
-      prev.includes(section)
-        ? prev.filter((s) => s !== section)
-        : [...prev, section]
-    );
+    setExpandedSections((prev) => {
+      const isExpanding = !prev.includes(section);
+      const next = isExpanding
+        ? [...prev, section]
+        : prev.filter((s) => s !== section);
+
+      if (isExpanding) {
+        // Scroll the opened section into view within the modal
+        requestAnimationFrame(() => {
+          const target = sectionRefs.current[section];
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        });
+      }
+
+      return next;
+    });
   };
 
   if (!isOpen || !project) return null;
 
   return (
     <div className={styles.overlay} onClick={onClose}>
-      <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
+      <div
+        className={styles.modal}
+        ref={modalRef}
+        onClick={(e) => e.stopPropagation()}
+      >
         {/* Header */}
         <div className={styles.header}>
-          <button className={styles.backButton} onClick={onClose}>
+          <button
+            className={styles.backButton}
+            onClick={onClose}
+            aria-label="Close"
+          >
             <svg
               viewBox="0 0 24 24"
               fill="none"
@@ -85,7 +108,7 @@ export default function ProjectOverlay({
             </svg>
           </button>
           <div className={styles.titleSection}>
-            <h1 className={styles.projectTitle}>PROJECT</h1>
+            <h1 className={styles.projectTitle}>{project.title}</h1>
             <h2 className={styles.caseStudyTitle}>CASE STUDY</h2>
           </div>
         </div>
@@ -121,7 +144,13 @@ export default function ProjectOverlay({
               { key: "thoughts", title: "THOUGHTS", content: project.thoughts },
               { key: "results", title: "RESULTS", content: project.results },
             ].map(({ key, title, content }) => (
-              <div key={key} className={styles.section}>
+              <div
+                key={key}
+                className={styles.section}
+                ref={(el) => {
+                  sectionRefs.current[key] = el;
+                }}
+              >
                 <button
                   className={styles.sectionHeader}
                   onClick={() => toggleSection(key)}

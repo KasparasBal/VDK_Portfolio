@@ -3,7 +3,6 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import FloatingNav from "./components/floating-nav";
 import ClientLayout from "./components/client-layout";
-import PageTransition from "./components/page-transition";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,6 +17,13 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "KB Portfolio",
   description: "Kasparas Balys Portfolio 2025",
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover" as const,
+  themeColor: "#000000",
 };
 
 export default function RootLayout({

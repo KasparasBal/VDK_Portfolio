@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import styles from "./project.module.css";
@@ -22,7 +21,7 @@ const projectsData = {
     image: "/project1-hero.png", // Replace with actual image path
   },
   2: {
-    title: "E-commerce Website",
+    title: "Layers.lt",
     category: "Web",
     brief:
       "Developing a modern e-commerce platform that prioritizes user experience while maintaining high performance standards. The goal was to create an intuitive shopping experience that drives conversions.",
