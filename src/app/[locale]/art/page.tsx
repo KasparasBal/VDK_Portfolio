@@ -1,6 +1,6 @@
 import path from "path";
 import { promises as fs } from "fs";
-import { unstable_cache } from "next/cache";
+// Avoid importing caching helpers that can pull in server runtime overhead
 import Footer from "../../components/footer";
 import Gallery from "./Gallery";
 
@@ -20,23 +20,16 @@ function parseNumericId(filename: string): number {
 export default async function ArtPage() {
   const artworkDir = path.join(process.cwd(), "public", "artwork");
 
-  const readManifest = unstable_cache(
-    async (): Promise<ManifestItem[] | null> => {
-      try {
-        const raw = await fs.readFile(
-          path.join(artworkDir, "manifest.json"),
-          "utf8"
-        );
-        return JSON.parse(raw) as ManifestItem[];
-      } catch {
-        return null;
-      }
-    },
-    ["artwork-manifest"],
-    { revalidate: 3600 }
-  );
-
-  const manifest = await readManifest();
+  let manifest: ManifestItem[] | null = null;
+  try {
+    const raw = await fs.readFile(
+      path.join(artworkDir, "manifest.json"),
+      "utf8"
+    );
+    manifest = JSON.parse(raw) as ManifestItem[];
+  } catch {
+    manifest = null;
+  }
 
   let items: {
     id: number;
@@ -54,18 +47,8 @@ export default async function ArtPage() {
       }))
       .sort((a, b) => a.id - b.id);
   } else {
-    const files = await fs.readdir(artworkDir).catch(() => [] as string[]);
-    const imageFiles = files
-      .filter((f) => /\.(png|jpg|jpeg|gif|webp|avif)$/i.test(f))
-      .sort((a, b) => parseNumericId(a) - parseNumericId(b));
-    items = imageFiles.map((file, index) => ({
-      id:
-        parseNumericId(file) !== Number.POSITIVE_INFINITY
-          ? parseNumericId(file)
-          : index + 1,
-      thumbSrc: `/artwork/${file}`,
-      fullSrc: `/artwork/${file}`,
-    }));
+    // If no manifest, do not attempt to scan the directory in production – keeps bundle lean
+    items = [];
   }
 
   return (
@@ -77,3 +60,4 @@ export default async function ArtPage() {
 }
 
 export const revalidate = 3600;
+export const dynamic = "force-static";
