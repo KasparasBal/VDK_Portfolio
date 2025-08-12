@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import styles from "./art.module.css";
 import { useI18n } from "@/i18n/I18nProvider";
@@ -18,6 +18,15 @@ export default function Gallery({ items }: { items: GalleryItem[] }) {
   const [selected, setSelected] = useState<number | null>(null);
   const [isInfoOpen, setIsInfoOpen] = useState(false);
   const [expanded, setExpanded] = useState<string[]>([]);
+
+  // Close lightbox with Escape
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setSelected(null);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, []);
 
   const toggle = (key: string) => {
     setExpanded((prev) =>
@@ -76,13 +85,14 @@ export default function Gallery({ items }: { items: GalleryItem[] }) {
           className={`${styles.lightbox} ${styles.lightboxVisible}`}
           onClick={() => setSelected(null)}
         >
-          <button className={styles.lightboxClose} aria-label="Close">
+          <button
+            className={styles.lightboxClose}
+            aria-label="Close"
+            onClick={() => setSelected(null)}
+          >
             <SvgIcon src="/x-circle.svg" width={28} height={28} />
           </button>
-          <div
-            className={styles.lightboxInner}
-            onClick={(e) => e.stopPropagation()}
-          >
+          <div className={styles.lightboxInner}>
             <Image
               src={
                 items.find((a) => a.id === selected)?.fullSrc ||
@@ -107,7 +117,10 @@ export default function Gallery({ items }: { items: GalleryItem[] }) {
         <>
           <div
             className={`${styles.asideBackdrop} ${styles.asideBackdropVisible}`}
-            onClick={() => setIsInfoOpen(false)}
+            onClick={() => {
+              setIsInfoOpen(false);
+              setSelected(null);
+            }}
           />
           <aside
             className={`${styles.infoPanel} ${styles.infoPanelOpen}`}
@@ -118,10 +131,12 @@ export default function Gallery({ items }: { items: GalleryItem[] }) {
               <h3 className={styles.infoTitle}>{`Artwork ${selected}`}</h3>
               <button
                 className={styles.closeBtn}
-                onClick={() => setIsInfoOpen(false)}
-              >
-                <SvgIcon src="/x-circle.svg" width={24} height={24} />
-              </button>
+                aria-label="Close"
+                onClick={() => {
+                  setIsInfoOpen(false);
+                  setSelected(null);
+                }}
+              />
             </div>
             <div className={styles.infoContent}>
               <div className={styles.infoThumbWrap}>

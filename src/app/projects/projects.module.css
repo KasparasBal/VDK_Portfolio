@@ -165,7 +165,7 @@
 }
 
 .projectPlaceholder {
-  /* Maintain thumbnail aspect ratio to match source */
+  /* Maintain thumbnail aspect ratio to match source without cropping */
   aspect-ratio: 16/9;
   background-color: #b0b0b0;
   display: flex;
@@ -178,9 +178,8 @@
 .projectImage {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: top;
-
+  object-fit: contain; /* prevent cropping */
+  object-position: center;
   transition: transform 0.3s ease;
 }
 
