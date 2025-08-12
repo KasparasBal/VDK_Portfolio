@@ -13,6 +13,7 @@ export type Dictionary = {
     aspirePrefix: string;
     designer: string;
     more: string;
+    process: string;
     projects: string;
     web: string;
     art: string;
@@ -68,6 +69,36 @@ export type Dictionary = {
     meaning: string;
     inspiration: string;
   };
+  aboutPage?: {
+    title: string;
+    subtitle: string;
+    paragraphs: string[];
+  };
+  processPage?: {
+    title: string;
+    subtitle: string;
+    heading?: string;
+    captions: {
+      c1: string;
+      c2: string;
+      c3: string;
+      c4: string;
+    };
+    s1Title?: string;
+    s1Body?: string;
+    s2Title?: string;
+    s2Body?: string;
+    s3Title?: string;
+    s3Body?: string;
+    s4Title?: string;
+    s4Body?: string;
+    s5Title?: string;
+    s5Body?: string;
+    s6Title?: string;
+    s6Body?: string;
+    closingTitle?: string;
+    closingBody?: string;
+  };
 };
 
 export const en: Dictionary = {
@@ -83,6 +114,7 @@ export const en: Dictionary = {
     aspirePrefix: "I ASPIRE TO BE A GREAT",
     designer: "DESIGNER",
     more: "MORE",
+    process: "PROCESS",
     projects: "PROJECTS",
     web: "WEB.",
     art: "ART.",
@@ -215,5 +247,49 @@ export const en: Dictionary = {
     idea: "IDEA",
     meaning: "MEANING",
     inspiration: "INSPIRATION",
+  },
+  processPage: {
+    title: "PROCESS",
+    subtitle: "How this portfolio was crafted",
+    heading: "How This Portfolio Was Crafted",
+    captions: {
+      c1: "First ideas between corporate and creativity",
+      c2: "Grunge texture design",
+      c3: "In-between idea generation",
+      c4: "Final design",
+    },
+    s1Title: "1. Early Beginnings",
+    s1Body:
+      "Right after high school, I studied design for a short time. The experience, however, felt… suppressive. The curriculum reminded me of Soviet-inspired design — rigid, uniform, and resistant to fresh ideas. Creativity seemed like an afterthought, and initiative was rarely encouraged. I felt boxed in, as if design had become only about serving corporate goals. So, I left to search for something else.",
+    s2Title: "2. Rediscovering Design’s Fun Side",
+    s2Body:
+      "Over the years, I began to see that design didn’t have to be lifeless. There’s joy, playfulness, and freedom — if you know when, where, and for whom you’re creating. When I decided to build my first portfolio, I wanted it to be a visual statement: a war between the polished, corporate world of design and the whimsical, sometimes chaotic possibilities of creative web design.",
+    s3Title: "3. The First Iteration – Order vs. Chaos",
+    s3Body:
+      "The first version was inspired by the early 2000s internet, when personal websites were everywhere. One half of the portfolio used a clean, modernized Bauhaus-style grid. The other half embraced the anarchy of the early web: irregular layouts, bold color clashes, and unrestrained creativity.",
+    s4Title: "4. The Second Iteration – Grunge & Anti-Design",
+    s4Body:
+      "I wasn’t done exploring. The next iteration kept the 2000s influence but leaned harder into grunge and anti-design aesthetics — raw textures, clashing typography, and the visual language of rebellion. This version was my protest against the growing trend of replacing human creativity with AI-generated content. I wanted it to feel like a rallying cry for creative freedom, a reminder that creation should be for joy, not just efficiency.",
+    s5Title: "5. Why I Moved On",
+    s5Body:
+      "As much as I loved its energy, the grunge-heavy version lacked the readability and structure I wanted — especially for the academic setting I was applying to. It didn’t strike the balance between clarity and creativity that I was looking for.",
+    s6Title: "6. The Final Iteration – Clean Structure, Bold Personality",
+    s6Body:
+      "The portfolio you see now is the result of that search. It’s clean and structured, built on an invisible grid for clarity — but with bold visual statements. Fonts vary for diversity, subtle animations keep the viewer engaged, and a touch of early-2000s nostalgia lives on through moving CDs, floppy disks, and playful easter eggs. This version feels like me: professional enough for serious consideration, but still brimming with curiosity and character.",
+    closingTitle: "Closing Note",
+    closingBody:
+      "This portfolio is more than a gallery — it’s a personal journey. Each stage reflects a moment in my relationship with design, from disillusionment to rediscovery. And it’s only the beginning.",
+  },
+  aboutPage: {
+    title: "Meet Kasparas",
+    subtitle: "Designer • Developer • Artist",
+    paragraphs: [
+      "I’m searching for something that truly feels like home. Right now, I work with websites and keep learning every day — that’s how I discovered tools like Figma and got a taste of UI/UX. In a way, it’s how I reconnected with design again.",
+      "I’ve learned that even in a world of corporate transactions, there’s joy in the little things — a smooth SVG animation, a clever interaction, a hidden visual Easter egg that makes someone smile.",
+      "My dream? To create websites worthy of Awwwards — not just functional pages, but experiences that sing.",
+      "I started as an artist, drifted away from it, and returned through coding and design. If life isn’t about pursuing what you love, then what’s the point? I want to tell stories — through visuals, words, or both — that connect with people in an instant.",
+      "When I’m not designing, I’m playing guitar, writing poetry, or painting. I like challenges, pushing my limits, and exploring uncertainty — even if I sometimes get distracted along the way.",
+      "The world might try to suppress creativity, but I want to challenge that — and dive headfirst into the unknown.",
+    ],
   },
 };

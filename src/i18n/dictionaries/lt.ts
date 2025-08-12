@@ -13,6 +13,7 @@ export const lt: Dictionary = {
     aspirePrefix: "SIEKIU TAPTI PUIKIU",
     designer: "DIZAINERIU",
     more: "DAUGIAU",
+    process: "PROCESAS",
     projects: "PROJEKTAI",
     web: "WEB.",
     art: "KŪRYBA",
@@ -144,5 +145,49 @@ export const lt: Dictionary = {
     idea: "IDĖJA",
     meaning: "PRASMĖ",
     inspiration: "ĮKVĖPIMAS",
+  },
+  processPage: {
+    title: "PROCESAS",
+    subtitle: "Kaip sukurtas šis portfolio",
+    heading: "Kaip buvo sukurtas šis portfolio",
+    captions: {
+      c1: "Pirmos idėjos tarp korporatyvumo ir kūrybos",
+      c2: "Grunge tekstūrų dizainas",
+      c3: "Tarpinė idėjų generacija",
+      c4: "Galutinis dizainas",
+    },
+    s1Title: "1. Pirmieji pradmenys",
+    s1Body:
+      "Iškart po mokyklos trumpai studijavau dizainą. Vis dėlto patirtis atrodė slopinanti. Programa priminė sovietinį dizainą — griežtą, vienodą ir atmetantį naujas idėjas. Kūrybiškumas buvo tarsi antraeilis, o iniciatyva – retai skatinama. Jaučiausi įrėmintas, lyg dizainas būtų tik korporatyvinių tikslų aptarnavimas. Todėl išėjau ieškoti kažko kito.",
+    s2Title: "2. Iš naujo atrastas dizaino žaismingumas",
+    s2Body:
+      "Bėgant metams supratau, kad dizainas neturi būti be gyvybės. Jame yra džiaugsmo, žaismingumo ir laisvės — jei žinai kada, kur ir kam kuri. Kurdamas pirmąjį portfolio norėjau aiškaus vizualinio pareiškimo: kovos tarp nugludinto, korporatyvaus dizaino pasaulio ir žaismingų, kartais chaotiškų kūrybinio interneto galimybių.",
+    s3Title: "3. Pirmoji iteracija – Tvarka prieš Chaosą",
+    s3Body:
+      "Pirmoji versija įkvėpta ankstyvojo 2000-ųjų interneto, kai asmeniniai puslapiai buvo visur. Viena portfolio pusė naudojo švarią, modernizuotą Bauhauso tipo gardelę. Kita pusė priėmė ankstyvojo interneto anarchiją: netvarkingus išdėstymus, ryškius spalvų susidūrimus ir nevaržomą kūrybą.",
+    s4Title: "4. Antroji iteracija – Grunge ir anti-dizainas",
+    s4Body:
+      "Tyrinėjimas nesibaigė. Kita versija išlaikė 2000-ųjų įtaką, bet dar labiau pasuko į grunge ir anti-dizaino estetiką — šiurkščias tekstūras, konfliktuojančią tipografiką ir maišto vizualinę kalbą. Tai buvo protestas prieš vis didesnę tendenciją kūrybą keisti dirbtinio intelekto generuotais turiniais. Norėjau, kad tai skambėtų kaip raginimas kurti dėl džiaugsmo, o ne tik dėl efektyvumo.",
+    s5Title: "5. Kodėl judėjau toliau",
+    s5Body:
+      "Nors energija patiko, grunge versijoje trūko skaitomumo ir struktūros — ypač akademiniame kontekste, kuriam ruošiausi. Tai nebuvo balansas tarp aiškumo ir kūrybiškumo, kurio ieškojau.",
+    s6Title: "6. Galutinė iteracija – Švari struktūra, drąsus charakteris",
+    s6Body:
+      "Dabartinė versija – šių paieškų rezultatas. Ji švari ir struktūruota, paremta nematoma gardele aiškumui užtikrinti, bet su drąsiais vizualiais akcentais. Įvairovę kuria skirtingi šriftai, subtilios animacijos įtraukia, o 2000-ųjų nostalgiją atgaivina judantys CD, disketės ir žaismingi „easter egg“. Tai – aš: pakankamai profesionalu rimtam vertinimui, bet kupina smalsumo ir charakterio.",
+    closingTitle: "Pabaigos žodis",
+    closingBody:
+      "Šis portfolio – daugiau nei darbų galerija; tai asmeninė kelionė. Kiekviena stadija atspindi mano santykio su dizainu momentą – nuo nusivylimo iki naujo atradimo. Ir tai tik pradžia.",
+  },
+  aboutPage: {
+    title: "Susipažinkime – Kasparas",
+    subtitle: "Dizaineris • Kūrėjas • Menininkas",
+    paragraphs: [
+      "Ieškau kažko, kas iš tiesų jaustųsi kaip namai. Šiuo metu dirbu su svetainėmis ir kasdien mokausi — taip atradau Figma ir paragavau UI/UX. Tam tikra prasme vėl sugrįžau prie dizaino.",
+      "Supratau, kad net ir korporacijų pasaulyje yra džiaugsmo mažuose dalykuose — sklandžioje SVG animacijoje, sumanioje sąveikoje, paslėptame vizualiniame siurprize.",
+      "Mano svajonė? Kurti svetaines, vertas Awwwards — ne tik funkcionalius puslapius, bet patirtis, kurios skamba.",
+      "Pradėjau kaip menininkas, vėliau nutolau, o sugrįžau per programavimą ir dizainą. Jei gyvenimas nėra apie tai, ką myli — tai kam tada? Noriu pasakoti istorijas — vaizdais, žodžiais ar abiem — kurios akimirksniu sujungia su žmogumi.",
+      "Kai nekuriu, groju gitara, rašau poeziją arba tapau. Mėgstu iššūkius, savo ribų stūmimą ir neapibrėžtumo tyrinėjimą — net jei kartais pakeliui ir pasimetu.",
+      "Pasaulis galbūt bando slopinti kūrybiškumą, bet aš noriu tam pasipriešinti — ir nerti stačia galva į nežinomybę.",
+    ],
   },
 };

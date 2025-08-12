@@ -560,6 +560,76 @@ const artManifest: ArtManifestItem[] = [
     "full": "/artwork/full/art_80.webp",
     "thumb": "/artwork/thumbs/art_80.webp",
     "blur": "/artwork/blur/art_80.webp"
+  },
+  {
+    "id": 81,
+    "original": "/artwork/art_81.jpg",
+    "full": "/artwork/full/art_81.webp",
+    "thumb": "/artwork/thumbs/art_81.webp",
+    "blur": "/artwork/blur/art_81.webp"
+  },
+  {
+    "id": 82,
+    "original": "/artwork/art_82.png",
+    "full": "/artwork/full/art_82.webp",
+    "thumb": "/artwork/thumbs/art_82.webp",
+    "blur": "/artwork/blur/art_82.webp"
+  },
+  {
+    "id": 83,
+    "original": "/artwork/art_83.png",
+    "full": "/artwork/full/art_83.webp",
+    "thumb": "/artwork/thumbs/art_83.webp",
+    "blur": "/artwork/blur/art_83.webp"
+  },
+  {
+    "id": 84,
+    "original": "/artwork/art_84.png",
+    "full": "/artwork/full/art_84.webp",
+    "thumb": "/artwork/thumbs/art_84.webp",
+    "blur": "/artwork/blur/art_84.webp"
+  },
+  {
+    "id": 85,
+    "original": "/artwork/art_85.jpg",
+    "full": "/artwork/full/art_85.webp",
+    "thumb": "/artwork/thumbs/art_85.webp",
+    "blur": "/artwork/blur/art_85.webp"
+  },
+  {
+    "id": 86,
+    "original": "/artwork/art_86.jpg",
+    "full": "/artwork/full/art_86.webp",
+    "thumb": "/artwork/thumbs/art_86.webp",
+    "blur": "/artwork/blur/art_86.webp"
+  },
+  {
+    "id": 87,
+    "original": "/artwork/art_87.jpg",
+    "full": "/artwork/full/art_87.webp",
+    "thumb": "/artwork/thumbs/art_87.webp",
+    "blur": "/artwork/blur/art_87.webp"
+  },
+  {
+    "id": 88,
+    "original": "/artwork/art_88.jpg",
+    "full": "/artwork/full/art_88.webp",
+    "thumb": "/artwork/thumbs/art_88.webp",
+    "blur": "/artwork/blur/art_88.webp"
+  },
+  {
+    "id": 89,
+    "original": "/artwork/art_89.webp",
+    "full": "/artwork/full/art_89.webp",
+    "thumb": "/artwork/thumbs/art_89.webp",
+    "blur": "/artwork/blur/art_89.webp"
+  },
+  {
+    "id": 90,
+    "original": "/artwork/art_90.jpg",
+    "full": "/artwork/full/art_90.webp",
+    "thumb": "/artwork/thumbs/art_90.webp",
+    "blur": "/artwork/blur/art_90.webp"
   }
 ];
 export default artManifest;

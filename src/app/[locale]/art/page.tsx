@@ -38,7 +38,8 @@ export default function ArtPage() {
   return (
     <>
       <Gallery items={items} />
-      <Footer />
+      {/* Use a light footer variant on white backgrounds to avoid a black strip look */}
+      <Footer variant="light" />
     </>
   );
 }

@@ -93,6 +93,7 @@ export default function Gallery({ items }: { items: GalleryItem[] }) {
             <SvgIcon src="/x-circle.svg" width={28} height={28} />
           </button>
           <div className={styles.lightboxInner}>
+            <div className={styles.spinner} />
             <Image
               src={
                 items.find((a) => a.id === selected)?.fullSrc ||
@@ -108,6 +109,12 @@ export default function Gallery({ items }: { items: GalleryItem[] }) {
                   : undefined
               }
               blurDataURL={items.find((a) => a.id === selected)?.blurSrc}
+              onLoadingComplete={() => {
+                const s = document.querySelector(
+                  `.${styles.spinner}`
+                ) as HTMLElement | null;
+                if (s) s.style.display = "none";
+              }}
             />
           </div>
         </div>
@@ -151,9 +158,7 @@ export default function Gallery({ items }: { items: GalleryItem[] }) {
                   className={styles.infoThumb}
                 />
               </div>
-              <p className={styles.infoText}>
-                {t.artPage?.details ?? "Artwork details"}
-              </p>
+              {/* Removed the standalone details label for a cleaner aside */}
               <div className={styles.sections}>
                 {[
                   {

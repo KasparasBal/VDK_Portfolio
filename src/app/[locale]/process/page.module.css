@@ -1,0 +1,147 @@
+.page {
+  padding: clamp(24px, 4vw, 48px);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  font-size: clamp(36px, 7vw, 96px);
+  font-weight: 900;
+  line-height: 1.05;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  text-align: center;
+  opacity: 0.75;
+  margin-bottom: 24px;
+}
+
+.section {
+  margin: 28px 0;
+}
+
+.section h2 {
+  font-size: clamp(20px, 2.5vw, 32px);
+  margin-bottom: 10px;
+}
+
+.section p {
+  font-size: clamp(16px, 1.8vw, 20px);
+  line-height: 1.7;
+}
+
+.image {
+  margin: 14px auto 0;
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 16/9;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  background: #0f0f0f;
+  cursor: zoom-in;
+}
+
+.imageRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.placeholder {
+  display: grid;
+  place-items: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.thumbGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.thumb {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4/3;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #111;
+  cursor: zoom-in;
+}
+
+.caption {
+  text-align: center;
+  margin-top: 8px;
+  opacity: 0.7;
+  font-size: 0.95rem;
+}
+
+.grid {
+  display: grid;
+  gap: 18px;
+}
+
+@media (min-width: 900px) {
+  .grid {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 720px) {
+  .imageRow {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Lightbox */
+.lightboxBackdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 200ms ease;
+}
+
+.lightboxBackdropVisible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.lightboxContent {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.lightboxInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.lightboxImage {
+  object-fit: contain;
+}
+
+.lightboxClose {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}

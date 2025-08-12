@@ -5,10 +5,22 @@
   align-items: center;
   background-color: black;
 }
+.footerLight {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
 .ebdText {
   font-size: clamp(4rem, 12vw, 11.25rem);
   color: transparent;
   -webkit-text-stroke: clamp(2px, 0.3vw, 3px) white;
+}
+.ebdTextLight {
+  font-size: clamp(4rem, 12vw, 11.25rem);
+  color: transparent;
+  -webkit-text-stroke: clamp(2px, 0.3vw, 3px) black;
 }
 .footerText {
   font-size: clamp(1rem, 4vw, 2.5rem);

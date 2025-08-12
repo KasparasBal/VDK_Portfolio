@@ -334,7 +334,6 @@
 
 .floppy {
   position: relative;
-  transform: translateX(-4%);
   width: 500px;
   height: 500px;
   display: grid;
@@ -355,6 +354,7 @@
 .floppyGuard {
   z-index: 2;
   transition: transform 0.3s ease;
+  filter: brightness(0.9);
 }
 
 .floppy:hover .floppyGuard {
@@ -362,18 +362,18 @@
 }
 
 .designText {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
   color: transparent;
   -webkit-text-stroke: clamp(2px, 0.3vw, 3px) white;
-  font-size: 140px;
+  font-size: 70px;
+  padding-bottom: 20px;
   font-weight: 900;
-  grid-row: 1;
-  grid-column: 1;
-  z-index: 3;
-  align-self: end;
-  justify-self: start;
+  z-index: 5;
   pointer-events: none;
-  line-height: 0.8;
-  padding: 0 0 20px 20px;
+  line-height: 0.85;
+  white-space: pre-line;
 }
 
 .diskContainer {
@@ -580,7 +580,7 @@
 
 .contactsLinks li::before,
 .contactsInformation li::before {
-  content: "→ ";
+  content: "→";
   margin-right: 0.5rem;
 }
 
@@ -782,8 +782,8 @@
   }
 
   .floppy {
-    width: 100%;
-    max-width: 420px;
+    width: 85%;
+    max-width: 360px;
     height: auto;
     aspect-ratio: 1;
     transform: none;
@@ -791,9 +791,11 @@
   }
 
   .designText {
-    font-size: clamp(56px, 14vw, 100px);
+    bottom: 12px;
+    left: 12px;
+    color: transparent;
     -webkit-text-stroke: clamp(1px, 0.3vw, 2px) white;
-    padding: 0 0 12px 12px;
+    font-size: clamp(44px, 14vw, 84px);
   }
 
   .diskContainer {
@@ -841,12 +843,35 @@
     width: 100%;
     height: auto;
   }
+  .designText {
+    bottom: 8px;
+    left: 8px;
+    font-size: clamp(80px, 16vw, 140px);
+    -webkit-text-stroke: clamp(1px, 0.4vw, 2px) white;
+  }
+  .webText {
+    color: white;
+    font-size: clamp(80px, 14vw, 100px);
+    padding: 0 0 12px 12px;
+    mix-blend-mode: difference;
+  }
+  .projectRowTwo span {
+    font-size: clamp(80px, 14vw, 100px);
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: fit-content;
+  }
   .aboutText {
     display: none;
   }
   .container {
     display: flex;
     flex-direction: column;
+    margin-top: 8px; /* tighten gap between hero and about */
   }
 
   .projects {

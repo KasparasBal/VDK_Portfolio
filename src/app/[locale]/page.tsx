@@ -52,9 +52,9 @@ export default function Home() {
               <p className={styles.introductionText}>{t.home.intro2}</p>
             </div>
             <div className={styles.aboutRowThree}>
-              <a href="#" className={styles.moreLink}>
+              <Link href={`${base}/about`} className={styles.moreLink}>
                 {t.home.more} <span data-hover=">">&gt;</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -64,10 +64,7 @@ export default function Home() {
         <div className={styles.projectContainer}>
           <div className={styles.projectRowOne}>
             <div className={styles.projectInnerColumnOne}>
-              <Link
-                href={`${base}/projects?filter=design`}
-                className={styles.floppy}
-              >
+              <Link href={`${base}/process`} className={styles.floppy}>
                 <Image
                   className={styles.floppyDisk}
                   src={FloppyDisk}
@@ -78,11 +75,7 @@ export default function Home() {
                   src={FloppyGuard}
                   alt="Floppy Guard"
                 />
-                <span className={styles.designText}>
-                  DESI
-                  <br />
-                  GN.
-                </span>
+                <span className={styles.designText}>{t.home.process}</span>
               </Link>
             </div>
             <div className={styles.projectInnerColumnTwo}>
