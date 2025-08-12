@@ -139,6 +139,9 @@ export default function Projects() {
   };
   const handleTouchMove = (e: React.TouchEvent) => {
     if (!isDragging) return;
+    // Prevent the whole page from scrolling while swiping projects
+    e.preventDefault();
+    e.stopPropagation();
     const currentY = e.touches[0]?.clientY ?? 0;
     const deltaY = currentY - dragStartY;
     if (Math.abs(deltaY) > 40) {
@@ -158,6 +161,17 @@ export default function Projects() {
     setSelectedProject(project);
     setIsOverlayOpen(true);
   };
+
+  // Prevent background scroll while interacting with carousel on touch devices
+  useEffect(() => {
+    const el = carouselRef.current;
+    if (!el) return;
+    const handler = (e: TouchEvent) => {
+      if (isDragging) e.preventDefault();
+    };
+    el.addEventListener("touchmove", handler, { passive: false });
+    return () => el.removeEventListener("touchmove", handler);
+  }, [isDragging]);
 
   const handleCloseOverlay = () => {
     setIsOverlayOpen(false);
@@ -200,6 +214,7 @@ export default function Projects() {
               onTouchStart={handleTouchStart}
               onTouchMove={handleTouchMove}
               onTouchEnd={handleTouchEnd}
+              style={{ touchAction: "none" }}
             >
               <div className={styles.carouselTrack}>
                 {projects.map((project, index) => {

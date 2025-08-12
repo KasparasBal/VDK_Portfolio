@@ -44,11 +44,14 @@ export default function Gallery({ items }: { items: GalleryItem[] }) {
                   sizes="(max-width: 768px) 50vw, 33vw"
                   className={styles.image}
                   priority={art.id <= 2}
+                  placeholder={art.blurSrc ? "blur" : undefined}
+                  blurDataURL={art.blurSrc}
                 />
               </button>
               <button
                 className={styles.infoButton}
                 onClick={() => {
+                  // Open aside only; do not trigger/enlarge the image
                   setSelected(art.id);
                   setIsInfoOpen(true);
                 }}
@@ -68,7 +71,7 @@ export default function Gallery({ items }: { items: GalleryItem[] }) {
         </div>
       </section>
 
-      {selected !== null && (
+      {selected !== null && !isInfoOpen && (
         <div
           className={`${styles.lightbox} ${styles.lightboxVisible}`}
           onClick={() => setSelected(null)}
@@ -89,6 +92,12 @@ export default function Gallery({ items }: { items: GalleryItem[] }) {
               fill
               sizes="100vw"
               className={styles.lightboxImage}
+              placeholder={
+                items.find((a) => a.id === selected)?.blurSrc
+                  ? "blur"
+                  : undefined
+              }
+              blurDataURL={items.find((a) => a.id === selected)?.blurSrc}
             />
           </div>
         </div>

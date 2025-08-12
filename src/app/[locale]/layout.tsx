@@ -43,6 +43,10 @@ export default async function LocaleLayout({
           <ClientLayout>{children}</ClientLayout>
           <FloatingNav />
         </I18nProvider>
+        {/* Global minimal spinner keyframes for any loaders we render inline */}
+        <style>
+          {`@keyframes spin { from { transform: rotate(0deg)} to { transform: rotate(360deg)} }`}
+        </style>
       </body>
     </html>
   );
