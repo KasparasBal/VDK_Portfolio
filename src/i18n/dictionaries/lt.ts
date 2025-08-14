@@ -56,85 +56,86 @@ export const lt: Dictionary = {
       id: "vetinn",
       title: "Vetinn",
       description:
-        "Šeimos valdoma veterinarijos klinikos svetainė, kuri kuria mielumo ir rūpesčio įspūdį, neprarandant profesionalumo.",
+        "Patogi naudoti svetainė šeimos veterinarijos klinikai, sukurta siekiant perteikti šilumos ir rūpestingumo jausmą, tačiau neaukojant profesionalumo.",
       image: "/project_thumbnails/vetinn_thumb.png",
       brief:
-        "Sukurti modernią, patogią veterinarijos valdymo sistemą, gerinančią klinikos efektyvumą ir pacientų priežiūros kokybę.",
+        "Atnaujinti esamą, pasenusią svetainę, siekiant sukurti didesnį pasitikėjimą naujiems klientams ir suteikti aiškią, greitą prieigą prie svarbiausios informacijos stresą patiriantiems augintinių savininkams.",
       design:
-        "Švari, medicininio lygio sąsaja su akcentu į prieinamumą ir greitą informacijos radimą. Spalvų schema pritaikyta ilgam žiūrėjimui.",
+        "Dizainas naudoja švarią, šviesią sąsają su švelnia ir draugiška spalvų palete, kad sukurtų prieinamumo jausmą ir sumažintų nerimą. Aiški vizualinė hierarchija iškelia svarbiausią informaciją, pavyzdžiui, skubios pagalbos kontaktus ir darbo valandas, į priekį. Tipografija yra profesionali, tačiau šilta, užtikrinanti skaitomumą ir svetingą toną.",
       challenges:
-        "Sudėtingi duomenų ryšiai tarp pacientų, gydymų ir vizitų. Privatumo užtikrinimas išlaikant patogumą.",
+        "Svarbiausias iššūkis buvo subalansuoti žaismingą, rūpestingą estetiką su medicinos praktikai būtinu profesionalumu. Dizainas turėjo būti raminantis susirūpinusiems augintinių savininkams, tuo pačiu aiškiai komunikuojant klinikos ekspertizę ir kompetenciją.",
       thoughts:
-        "Pusiausvyra tarp funkcionalumo ir paprastumo buvo esminė. Medicininė programinė įranga turi būti ir galinga, ir paprasta naudoti.",
+        "Veterinarijos paslaugų srityje vartotojo emocinė būsena yra esminė. Pirmasis dizaino tikslas – sukurti pasitikėjimą ir sumažinti stresą. Kiekvienas elementas, nuo nuotraukų pasirinkimo iki mygtukų pavadinimų, buvo pasirinktas siekiant sukurti saugumo, rūpesčio ir patikimumo jausmą.",
       results:
-        "Vizitų registravimo laikas sumažėjo 40%, o pacientų įrašų tikslumas padidėjo 25%.",
+        "Naujasis dizainas sėkmingai sukūrė švarią, profesionalią sąsają, kurią lengva naudoti esant įtampai, o žaismingi elementai padėjo sustiprinti šeimos verslo identitetą ir sulaukė teigiamų klientų atsiliepimų.",
     },
     {
       id: "trt",
       title: "TRT Baltic",
       description:
-        "Specializuota platforma testosterono pakaitinei terapijai su pažangiomis formomis ir vizualine kalba, skirta vyrams.",
+        "Saugi, profesionali medicininė platforma pakaitinės testosterono terapijos klinikai, pasižyminti pažangiomis pacientų formomis ir vizualine kalba, skirta vyrų auditorijai.",
       image: "/project_thumbnails/trt_thumb.png",
       brief:
-        "Sukurti saugią platformą TRT pacientams ir sveikatos priežiūros specialistams gydymo planams valdyti ir pažangai stebėti.",
+        "Sukurti saugią, konfidencialią platformą TRT pacientams ir sveikatos priežiūros specialistams, skirtą valdyti sudėtingus gydymo planus, stebėti progresą per duomenų vizualizaciją ir saugiai komunikuoti.",
       design:
-        "Profesionali medicininė sąsaja su aiškia duomenų vizualizacija ir saugiais komunikacijos kanalais. Akcentas – privatumui ir tikslumui.",
+        "Sąsaja yra kliniška ir profesionali, naudojanti santūrią spalvų paletę autoriteto ir pasitikėjimo jausmui sukurti. Duomenys vizualizuojami per aiškias diagramas ir grafikus, kad būtų lengva sekti progresą. Visos formos ir komunikacijos kanalai buvo sukurti teikiant didžiausią prioritetą privatumui, saugumui ir tikslumui.",
       challenges:
-        "Griežti duomenų saugumo reikalavimai ir sudėtingas gydymo protokolų valdymas.",
+        "Projektas susidūrė su itin griežtais duomenų saugumo ir pacientų privatumo (BDAR) reikalavimais. Sudėtingų gydymo protokolų logikos valdymas ir jautrių medicininių duomenų pateikimas pacientams suprantamu būdu buvo reikšmingas UI/UX iššūkis.",
       thoughts:
-        "Medicininės programos reikalauja išskirtinio dėmesio detalėms ir naudotojo patirčiai, nes klaidos gali turėti rimtų pasekmių.",
+        "Medicininės programos reikalauja išskirtinės atsakomybės. Kitaip nei kituose projektuose, dizaino klaidos čia gali turėti rimtų pasekmių. Naudotojo patirtis privalo teikti pirmenybę aiškumui, tikslumui ir saugumui, užtikrinant, kad technologija įgalintų tiek pacientą, tiek gydytoją.",
       results:
-        "Pagerėjo gydymo laikymasis 35% ir sustiprėjo pacientų bei specialistų komunikacija.",
+        "Platforma sukūrė saugią ir efektyvią aplinką gydymo valdymui. Jos aiškus duomenų vizualizavimas ir supaprastinti komunikacijos kanalai, kaip pranešama, pagerino pacientų gydymo režimo laikymąsi ir sustiprino pacientų bei gydytojų sąveikos kokybę.",
     },
     {
       id: "Portfolio",
-      title: "Asmeninis portfolio",
+      title: "Asmeninis Portfolio",
       description:
-        "Modernus, interaktyvus portfolio, pristatantis dizaino ir programavimo darbus su sklandiomis animacijomis ir įtraukiančia patirtimi.",
+        "Galutinė mano asmeninio portfolio iteracija, kuri evoliucionavo iš kūrybinio eksperimento į brandų, interaktyvų darbą, balansuojantį tarp unikalaus stiliaus ir kertinių UI/UX principų.",
       image: "/project_thumbnails/portfolio_thumb.png",
       brief:
-        "Sukurti išskirtinį portfolio, parodantį tiek dizaino įgūdžius, tiek technines galimybes, užtikrinant malonią naudotojo patirtį.",
+        "Sukurti išskirtinį portfolio, kuris demonstruotų mano kelionę, dizaino įgūdžius ir techninius gebėjimus, sukuriant įtraukiančią ir patogią naudotojo patirtį, kuri atspindėtų mano profesinį augimą.",
       design:
-        "Minimalistinė kryptis su ryškia tipografija ir sklandiomis animacijomis. Dėmesys darbų pateikimui neperkraunant naudotojo.",
+        "Dizainas paremtas drąsia tipografija ir tvirtu tinkleliu kaip pagrindu. Ši struktūra yra papildyta subtiliomis, sklandžiomis animacijomis ir interaktyviais elementais, siekiant sukurti įtraukiančią patirtį. Pagrindinis tikslas yra efektyviai pristatyti darbus neperkraunant vartotojo, taip įrodant, kad stipri estetika gali egzistuoti kartu su tvirtu funkcionalumu.",
       challenges:
-        "Pusiausvyra tarp vizualaus patrauklumo ir našumo, užtikrinant sudėtingų animacijų suderinamumą tarp naršyklių.",
+        "Pagrindinis iššūkis buvo išgryninti mano ankstesnes, chaotiškesnes 'anti-dizaino' koncepcijas į funkcionalų produktą, neprarandant asmeniškumo. Techniškai, svarbiausias prioritetas buvo suderinti sudėtingų animacijų vizualų patrauklumą su greita svetainės krovimo sparta ir užtikrinti suderinamumą tarp skirtingų naršyklių.",
       thoughts:
-        "Portfolio turėtų atspindėti kūrėjo stilių, išliekant prieinamas ir funkcionalus visiems naudotojams.",
+        "Portfolio yra daugiau nei galerija – tai dizaino manifestas. Šis projektas mane išmokė, kad mano asmeninis stilius yra stiprybė, bet jo tikroji galia atsiskleidžia, kai jis tarnauja aiškiam tikslui – šiuo atveju, sukurti prieinamą ir paveikų pasakojimą vartotojui.",
       results:
-        "Padidėjo įsitraukimo laikas 60% ir gauta daug teigiamų atsiliepimų apie UX ir vizualiką.",
+        "Galutinė svetainė yra efektyvi mano dizaino kelionės kulminacija, sėkmingai parodanti mano augimą iš vizualaus menininko į produkto dizainerį, kuris vertina tiek kūrybinę išraišką, tiek į vartotoją orientuotą funkcionalumą.",
     },
     {
       id: "Ecommerce",
       title: "Layers.lt",
       description:
-        "Pilnai funkcinė el. prekybos platforma su pažangiu produktų filtravimu, saugiais mokėjimais ir aiškia informacijos pateiktimi.",
+        "Pilnai funkcionali e-komercijos platforma specializuotam odos priežiūros prekės ženklui, pasižyminti edukaciniu požiūriu, pažangiu filtravimu ir saugiu, sklandžiu apmokėjimo procesu.",
       image: "/project_thumbnails/layers_thumb.png",
       brief:
-        "Sukurti mastelį atlaikančią e. prekybos sistemą su moderniais UX sprendimais ir patikimu backend funkcionalumu.",
+        "Sukurti plečiamą e-komercijos sprendimą su moderniais UX šablonais, kuris ne tik parduoda produktus, bet ir edukuoja vartotoją, taip kuriant ilgalaikį pasitikėjimą ir prekės ženklo lojalumą.",
       design:
-        "Naudotojui palanki sąsaja su aiškiu produktų pateikimu ir supaprastintu apmokėjimu. Pirmiausia – mobiliesiems.",
+        "Į vartotoją orientuotas ir 'mobile-first' principu paremtas dizainas. Produktų puslapiuose yra aiški informacijos hierarchija, jungianti komercinę informaciją su edukaciniu turiniu. Atsiskaitymo procesas buvo supaprastintas iki minimalių žingsnių, siekiant sumažinti krepšelio apleidimo rodiklį, o bendra estetika balansuoja tarp klinikinio profesionalumo ir premium jausmo.",
       challenges:
-        "Sudėtingas produktų katalogo valdymas ir sklandžių mokėjimų užtikrinimas su keliais metodais.",
+        "Svarbiausias iššūkis buvo integruoti didelį, sudėtingą produktų katalogą su intuityvia filtravimo sistema. Kitas iššūkis – užtikrinti visiškai sklandų ir saugų apmokėjimo procesą per kelis skirtingus mokėjimo metodus, nes bet kokia trintis čia tiesiogiai veikia pardavimus.",
       thoughts:
-        "E. prekybos sėkmė labai priklauso nuo trinties mažinimo pirkimo procese, kartu užtikrinant saugumą.",
+        "Šiuolaikinės e-komercijos sėkmė priklauso nuo gebėjimo sumažinti trintį pirkimo procese ir sukurti pasitikėjimą. Vartotojo kelionė turi būti be pastangų. Suteikdami tikrą vertę per edukaciją, mes pavertėme platformą iš paprastos parduotuvės į patikimą šaltinį, o tai yra daug galingesnė pozicija rinkoje.",
       results:
-        "Konversijos rodiklis padidėjo 28%, o krepšelio apleidimas sumažėjo 45%.",
+        "Platformos dizainas sėkmingai padidino tikimybę, kad klientai priims informuotus pirkimo sprendimus. Suteikiant vartotojams žinių, o ne tik stumiant produktus, buvo sukurtas stipresnis pasitikėjimo jausmas ir lojalesnių klientų bazė.",
     },
     {
       id: "vlkk",
       title: "VL Kineziterapijos Klinika",
       description:
-        "Šeimos vedamos kineziterapijos klinikos puslapis, atspindintis profesionalumą ir atsakingą požiūrį į žmogaus kūną ir klientus.",
+        "Profesionali ir svetinga interneto svetainė kineziterapijos klinikai, sukurta atspindėti atsakingą, modernų požiūrį į fizinę sveikatą ir klientų gerovę.",
       image: "/project_thumbnails/vlk_thumb.png",
       brief:
-        "Sukurti intuityvią analitinę aplinką, paverčiančią sudėtingus duomenis veiksmais pagrįstomis įžvalgomis.",
+        "Sukurti profesionalų, patikimą ir lengvai naviguojamą skaitmeninį įvaizdį kineziterapijos klinikai, leidžiantį potencialiems klientams lengvai rasti paslaugas ir užsiregistruoti vizitui.",
       design:
-        "Į duomenis orientuota sąsaja su aiškia vizualine hierarchija ir interaktyviomis diagramomis. Tamsi tema ilgesniam darbui.",
+        "Dizainas yra švarus, erdvus, naudojama raminanti spalvų paletė, asocijuojama su sveikata ir pozityvumu. Sąsaja teikia pirmenybę aiškiai navigacijai ir stipriai 'call-to-action' sistemai, kad vartotojai būtų be vargo nukreipti link konsultacijos užsakymo. Vizualinė kalba yra profesionali ir orientuota į duomenis, kelianti pasitikėjimą klinikos ekspertize.",
       challenges:
-        "Didelių duomenų rinkinių aiškus pateikimas neapkraunant naudotojų ir realaus laiko tikslumo užtikrinimas.",
+        "Pagrindinis iššūkis buvo perteikti medicininį profesionalumą, tačiau neatrodyti šaltam ar kliniškam. Dizainas turėjo būti svetingas ir empatiškas vartotojams, kurie gali jausti skausmą ar nerimą, tuo pačiu pozicionuojant kliniką kaip aukštos kvalifikacijos ekspertų komandą.",
       thoughts:
-        "Veiksminga duomenų vizualizacija reikalauja suprasti tiek techninius aspektus, tiek žmogaus suvokimą.",
-      results: "Laikas iki įžvalgų sumažėjo 50%, pagerėjo sprendimų priėmimas.",
+        "Sveikatos priežiūros paslaugų srityje svetainė dažnai yra pirmasis kontaktinis taškas ir privalo iškart sukurti pasitikėjimą. Dizainas turi projektuoti kompetenciją, rūpestį ir patogumą. Paini ar neprofesionali svetainė gali tiesiogiai atgrasyti potencialų klientą nuo pagalbos paieškos.",
+      results:
+        "Naujoji svetainė tapo aiškiais, profesionaliais ir pozityviais skaitmeniniais klinikos vartais. Intuityvi navigacija ir aiškus paslaugų pristatymas padarė pagalbos paieškos procesą mažiau įtemptą ir sustiprino prekės ženklo, kaip modernios, į klientą orientuotos praktikos, įvaizdį.",
     },
   ],
   artPage: {

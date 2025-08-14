@@ -8,9 +8,9 @@
   backdrop-filter: blur(8px);
   z-index: 2000;
   display: flex;
-  align-items: flex-start; /* start near the top */
+  align-items: center; /* center vertically on desktop */
   justify-content: center; /* centered horizontally */
-  padding: 10px; /* 5–10px margin from viewport edges */
+  padding: 20px; /* margin from viewport edges */
   animation: fadeIn 0.3s ease-out;
   overflow: hidden;
 }
@@ -18,9 +18,9 @@
 .modal {
   background: white;
   border-radius: 12px;
-  width: 100%;
-  max-width: calc(100vw - 20px); /* respect 10px side padding */
-  max-height: calc(100vh - 20px); /* respect 10px top/bottom padding */
+  width: min(80vw, 1200px); /* around 80% width on desktop */
+  max-width: min(80vw, 1200px);
+  max-height: 90vh; /* comfortable height */
   overflow-y: auto;
   position: relative;
   animation: slideIn 0.3s ease-out;
@@ -144,6 +144,13 @@
   align-items: center;
   text-align: left;
   transition: background-color 0.2s ease;
+}
+
+/* Remove harsh focus outline on dropdown toggles */
+.sectionHeader:focus,
+.sectionHeader:focus-visible {
+  outline: none;
+  box-shadow: none;
 }
 
 .sectionHeader:hover {
@@ -283,7 +290,7 @@ html.overlay-open {
 @media (max-width: 480px) {
   .overlay {
     padding: 6px;
-    align-items: flex-start;
+    align-items: flex-start; /* sheet-style on mobile */
     animation: none;
   }
 

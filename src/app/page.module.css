@@ -1,3 +1,12 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  background-color: white;
+}
+
 /*-----------------Hero Section-----------------*/
 
 .hero {
@@ -56,7 +65,7 @@
 .aboutText {
   grid-column: 1;
   grid-row: 1/4; /* Span all three rows */
-  font-size: 13.125rem;
+  font-size: 15rem;
   font-weight: 900;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
@@ -186,11 +195,11 @@
 }
 
 .introductionText {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: 300;
   text-transform: uppercase;
-  line-height: 45px;
-  max-width: 600px;
+  line-height: 60px;
+  max-width: 700px;
 }
 
 .moreLink {
@@ -826,6 +835,9 @@
 }
 
 @media (max-width: 480px) {
+  .main {
+    gap: 50px;
+  }
   .hero {
     display: flex;
     min-height: fit-content;
@@ -844,9 +856,9 @@
     height: auto;
   }
   .designText {
-    bottom: 8px;
-    left: 8px;
-    font-size: clamp(80px, 16vw, 140px);
+    bottom: 5%;
+    left: 5%;
+    font-size: clamp(40px, 13vw, 100px);
     -webkit-text-stroke: clamp(1px, 0.4vw, 2px) white;
   }
   .webText {
@@ -863,7 +875,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    height: fit-content;
+    min-height: 50vh;
   }
   .aboutText {
     display: none;
@@ -892,7 +904,7 @@
     height: 48px;
   }
   .contacts {
-    margin: 50px 0;
+    margin: 0; /* remove unwanted gap between ART and TALK on mobile */
   }
   .contactsRowTwo {
     display: flex;

@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import styles from "./art.module.css";
-import { useI18n } from "@/i18n/I18nProvider";
 import SvgIcon from "@/app/components/svg-icon";
 
 type GalleryItem = {
@@ -14,10 +13,7 @@ type GalleryItem = {
 };
 
 export default function Gallery({ items }: { items: GalleryItem[] }) {
-  const { t } = useI18n();
   const [selected, setSelected] = useState<number | null>(null);
-  const [isInfoOpen, setIsInfoOpen] = useState(false);
-  const [expanded, setExpanded] = useState<string[]>([]);
 
   // Close lightbox with Escape
   useEffect(() => {
@@ -28,11 +24,7 @@ export default function Gallery({ items }: { items: GalleryItem[] }) {
     return () => window.removeEventListener("keydown", onKey);
   }, []);
 
-  const toggle = (key: string) => {
-    setExpanded((prev) =>
-      prev.includes(key) ? prev.filter((k) => k !== key) : [...prev, key]
-    );
-  };
+  // Aside panel disabled for now; details generation removed
 
   return (
     <>
@@ -57,6 +49,7 @@ export default function Gallery({ items }: { items: GalleryItem[] }) {
                   blurDataURL={art.blurSrc}
                 />
               </button>
+              {/*
               <button
                 className={styles.infoButton}
                 onClick={() => {
@@ -64,9 +57,7 @@ export default function Gallery({ items }: { items: GalleryItem[] }) {
                   setSelected(art.id);
                   setIsInfoOpen(true);
                 }}
-                aria-label={`${t.artPage?.details ?? "Details"}: Artwork ${
-                  art.id
-                }`}
+                aria-label={`${t.artPage?.details ?? "Details"}: Artwork ${art.id}`}
               >
                 <SvgIcon
                   src="/read-cv-logo-fill.svg"
@@ -75,12 +66,13 @@ export default function Gallery({ items }: { items: GalleryItem[] }) {
                   className={styles.infoIcon}
                 />
               </button>
+              */}
             </div>
           ))}
         </div>
       </section>
 
-      {selected !== null && !isInfoOpen && (
+      {selected !== null && (
         <div
           className={`${styles.lightbox} ${styles.lightboxVisible}`}
           onClick={() => setSelected(null)}
@@ -120,6 +112,7 @@ export default function Gallery({ items }: { items: GalleryItem[] }) {
         </div>
       )}
 
+      {/* Temporarily disabled aside info panel until descriptions are ready
       {isInfoOpen && selected !== null && (
         <>
           <div
@@ -158,41 +151,20 @@ export default function Gallery({ items }: { items: GalleryItem[] }) {
                   className={styles.infoThumb}
                 />
               </div>
-              {/* Removed the standalone details label for a cleaner aside */}
               <div className={styles.sections}>
-                {[
-                  {
-                    key: "medium",
-                    title: t.artPage?.medium,
-                    content: "Oil on canvas",
-                  },
-                  {
-                    key: "idea",
-                    title: t.artPage?.idea,
-                    content: "Exploration of light and shadow.",
-                  },
-                  {
-                    key: "meaning",
-                    title: t.artPage?.meaning,
-                    content: "Reflects the duality of human emotion.",
-                  },
-                  {
-                    key: "inspiration",
-                    title: t.artPage?.inspiration,
-                    content: "Inspired by nature and urban geometry.",
-                  },
-                ].map(({ key, title, content }) => (
+                {(() => {
+                  const details = getArtworkDetails(selected);
+                  return [
+                    { key: "medium", title: t.artPage?.medium, content: details.medium },
+                    { key: "idea", title: t.artPage?.idea, content: details.idea },
+                    { key: "meaning", title: t.artPage?.meaning, content: details.meaning },
+                    { key: "inspiration", title: t.artPage?.inspiration, content: details.inspiration },
+                  ];
+                })().map(({ key, title, content }) => (
                   <div key={key} className={styles.section}>
-                    <button
-                      className={styles.sectionHeader}
-                      onClick={() => toggle(key)}
-                    >
+                    <button className={styles.sectionHeader} onClick={() => toggle(key)}>
                       <span className={styles.sectionTitle}>{title}</span>
-                      <span
-                        className={`${styles.chevron} ${
-                          expanded.includes(key) ? styles.expanded : ""
-                        }`}
-                      >
+                      <span className={`${styles.chevron} ${expanded.includes(key) ? styles.expanded : ""}`}>
                         &gt;
                       </span>
                     </button>
@@ -208,6 +180,7 @@ export default function Gallery({ items }: { items: GalleryItem[] }) {
           </aside>
         </>
       )}
+      */}
     </>
   );
 }

@@ -157,86 +157,86 @@ export const en: Dictionary = {
       id: "vetinn",
       title: "Vetinn",
       description:
-        "Family-run veterinary clinic website that invokes a sense of cuteness & care without forsaking professionalism.",
+        "A user-friendly website for a family-run veterinary clinic, designed to evoke a sense of warmth and care while upholding the highest standards of professionalism.",
       image: "/project_thumbnails/vetinn_thumb.png",
       brief:
-        "Create a modern, user-friendly veterinary management system that improves clinic efficiency and patient care quality.",
+        "Redesign the existing, outdated website for a veterinary clinic to build trust with new clients and provide clear, immediate access to critical information for stressed pet owners.",
       design:
-        "Clean, medical-grade interface with emphasis on accessibility and quick information retrieval. Color scheme optimized for long viewing periods.",
+        "The design uses a clean, bright interface with a soft and friendly color palette to feel approachable and reduce anxiety. A clear visual hierarchy places essential information like emergency contacts and opening hours front and center. The typography is professional yet warm, ensuring readability and a welcoming tone.",
       challenges:
-        "Complex data relationships between patients, treatments, and appointments. Ensuring privacy while maintaining usability.",
+        "The primary challenge was balancing a playful, caring aesthetic with the seriousness and professionalism required of a medical practice. The design needed to be reassuring to anxious pet owners while clearly communicating the clinic's expertise and competence.",
       thoughts:
-        "The balance between comprehensive functionality and simplicity was crucial. Medical software must be both powerful and easy to use under pressure.",
+        "For a service like veterinary care, the user's emotional state is key. The design's first job is to build trust and reduce stress. Every element, from the choice of imagery to the button labels, was chosen to create a feeling of safety, care, and reliability.",
       results:
-        "Reduced appointment scheduling time by 40% and improved patient record accuracy by 25%.",
+        "The new design successfully created a clean, professional interface that is easy to navigate under pressure, while its playful and engaging elements helped reinforce the clinic's family-run, caring identity, leading to positive feedback from their clients.",
     },
     {
       id: "trt",
       title: "TRT Baltic",
       description:
-        "A specialized platform for testosterone replacement therapy with advanced forms & a visual language targeted at men.",
+        "A secure, professional medical platform for a testosterone replacement therapy clinic, featuring advanced patient forms and a visual language specifically targeted at a male demographic.",
       image: "/project_thumbnails/trt_thumb.png",
       brief:
-        "Develop a secure platform for TRT patients and healthcare providers to manage treatment plans and monitor progress.",
+        "Develop a secure, confidential platform for TRT patients and healthcare providers to manage complex treatment plans, track progress through data visualization, and communicate securely.",
       design:
-        "Professional medical interface with clear data visualization and secure communication channels. Emphasis on privacy and accuracy.",
+        "The interface is clinical and professional, using a reserved color palette to build a sense of authority and trust. Data is visualized through clean charts and graphs for easy progress tracking. All forms and communication channels were designed with a primary emphasis on privacy, security, and accuracy.",
       challenges:
-        "Strict data security requirements and complex treatment protocol management.",
+        "The project involved extremely strict data security and patient privacy (GDPR) requirements. Managing the complex logic of treatment protocols and presenting sensitive medical data in an understandable way for patients was a significant UI/UX challenge.",
       thoughts:
-        "Medical applications require exceptional attention to detail and user experience, as errors can have serious consequences.",
+        "Medical applications carry immense responsibility. Unlike other projects, design errors here can have serious consequences. The user experience must prioritize clarity, accuracy, and security above all else, ensuring the technology empowers both the patient and the doctor.",
       results:
-        "Improved treatment adherence by 35% and enhanced communication between patients and providers.",
+        "The platform created a secure and efficient environment for treatment management. Its clear data visualization and streamlined communication channels reportedly improved patient adherence to treatment protocols and enhanced the quality of patient-provider interactions.",
     },
     {
       id: "Portfolio",
       title: "Personal Portfolio",
       description:
-        "A modern, interactive portfolio showcasing design and development work with smooth animations and engaging user experience.",
+        "The final iteration of my personal portfolio, which evolved from a raw creative experiment into a mature, interactive showcase that balances a unique style with core UI/UX principles.",
       image: "/project_thumbnails/portfolio_thumb.png",
       brief:
-        "Create a distinctive portfolio that demonstrates both design skills and technical capabilities while providing an engaging user experience.",
+        "Create a distinctive portfolio that demonstrates my journey, design skills, and technical capabilities, culminating in an engaging and user-friendly experience that reflects my professional growth.",
       design:
-        "Minimalist approach with bold typography and smooth animations. Focus on showcasing work effectively without overwhelming the user.",
+        "The design uses bold typography and a strong grid system as its foundation. This structure is then layered with subtle, smooth animations and interactive elements to create an engaging experience. The core focus is on showcasing the work effectively without overwhelming the user, proving that a strong aesthetic can coexist with solid usability.",
       challenges:
-        "Balancing visual appeal with performance and ensuring cross-browser compatibility for complex animations.",
+        "The main challenge was refining my earlier, more chaotic 'anti-design' concepts into a functional product without losing personality. Technically, balancing the visual appeal of complex animations with fast page load times and ensuring cross-browser compatibility was a top priority.",
       thoughts:
-        "Portfolio design should reflect the designer's style while remaining accessible and functional for all users.",
+        "A portfolio is more than a gallery; it's a design statement. This project taught me that my personal style is a strength, but its true power is realized when it's used to serve a clear purpose – in this case, creating an accessible and compelling narrative for the user.",
       results:
-        "Increased engagement time by 60% and received positive feedback on user experience and visual design.",
+        "The final website is an effective culmination of my design journey, successfully demonstrating my growth from a visual artist into a product designer who prioritizes both creative expression and user-centric functionality.",
     },
     {
       id: "Ecommerce",
       title: "Layers.lt",
       description:
-        "A full-featured online shopping platform with advanced product filtering, secure payments, concise & clear information serving.",
+        "A full-featured e-commerce platform for a specialized skincare brand, featuring an educational approach, advanced filtering, and a secure, streamlined checkout process.",
       image: "/project_thumbnails/layers_thumb.png",
       brief:
-        "Build a scalable e-commerce solution with modern UX patterns and robust backend functionality.",
+        "Build a scalable e-commerce solution with modern UX patterns that not only sells products but also educates the consumer, building long-term trust and brand loyalty.",
       design:
-        "User-centric design with clear product presentation and streamlined checkout process. Mobile-first responsive design.",
+        "A user-centric and mobile-first responsive design was implemented. The product pages feature clear information hierarchy, combining commercial details with educational content. The checkout process was streamlined into minimal steps to reduce cart abandonment, and the overall aesthetic balances clinical professionalism with a premium feel.",
       challenges:
-        "Complex product catalog management and ensuring smooth payment processing across multiple payment methods.",
+        "A key challenge was integrating a large, complex product catalog with an intuitive filtering system. Another was ensuring a completely smooth and secure payment process across multiple payment methods, as any friction here directly impacts sales.",
       thoughts:
-        "E-commerce success depends heavily on reducing friction in the purchase process while maintaining security.",
+        "Modern e-commerce success depends on reducing friction and building trust. The user journey must be effortless. By providing genuine value through education, we transformed the platform from a simple store into a trusted resource, which is a far more powerful position in the market.",
       results:
-        "Increased conversion rate by 28% and reduced cart abandonment by 45%.",
+        "The platform design successfully increased the likelihood that clients make informed purchasing decisions. By empowering users with knowledge instead of just pushing products, it fostered a stronger sense of trust and a more loyal customer base.",
     },
     {
       id: "vlkk",
       title: "VL Kineziterapijos Klinika",
       description:
-        "Family-run physiotherapy clinic website aiming to reflect professionalism and a responsible approach to the body and clients.",
+        "A professional and welcoming website for a physiotherapy clinic, designed to reflect a responsible, modern approach to physical health and client well-being.",
       image: "/project_thumbnails/vlk_thumb.png",
       brief:
-        "Create an intuitive dashboard that transforms complex data into actionable insights for decision-making.",
+        "Create a professional, trustworthy, and easy-to-navigate online presence for a physiotherapy clinic, making it simple for potential clients to find services and book appointments.",
       design:
-        "Data-focused interface with clear visual hierarchy and interactive charts. Dark theme for extended viewing comfort.",
+        "The design is clean, spacious, and uses a calming color palette associated with health and positivity. The interface prioritizes clear navigation and a strong call-to-action system to guide users effortlessly toward booking a consultation. The visual language is professional and data-driven, instilling confidence in the clinic's expertise.",
       challenges:
-        "Presenting large datasets clearly without overwhelming users and ensuring real-time data accuracy.",
+        "The primary challenge was to communicate medical professionalism without appearing cold or clinical. The design needed to be welcoming and empathetic to users who may be experiencing pain or distress, while still positioning the clinic as a team of highly skilled experts.",
       thoughts:
-        "Effective data visualization requires understanding both the technical aspects and the human factors of information processing.",
+        "For a healthcare service, the website is often the first point of contact and must immediately build trust. The design must project competence, care, and ease-of-use. A confusing or unprofessional website can directly deter a potential client from seeking the help they need.",
       results:
-        "Reduced time to insights by 50% and improved data-driven decisions across the organization.",
+        "The new website provided a clear, professional, and positive digital front door for the clinic. The intuitive navigation and clear service presentation made the process of seeking help less stressful for users and reinforced the brand's image of a modern, client-focused practice.",
     },
   ],
   artPage: {
